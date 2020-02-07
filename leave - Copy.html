@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <title>Corazon 2.0 | Employee Dashboard</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<!-- CSS -->
+
+<!-- font -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+<!-- font -->
+
+<!-- font awsome icons -->
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<link rel="stylesheet" href="fontawsome/fontawesome-free/css/all.min.css">
+<!-- font awsome icons -->
+</head>
+<body>
+  <div class="leave-approver-bg">   
+
+  <!--*********************************Section 1*********************************-->
+  <section class="mb-0">
+          <div class="container-fluid">
+            <div class="row flex-xl-nowrap">
+
+           
+
+  <div class="leave-approver-bg">     
+                      
+  <main class="col-12 col-md-12 col-xl-12 bd-content" role="main">
+    <!-- <div class="scrollbar" id="style-15">
+      <div class="force-overflow"></div>
+    </div> -->
+<div class="background-overlay col-lg-10 mx-auto scrollbar" id="style-15">
+<div class="col-lg-10 mx-auto force-overflow">
+<div class="row mt-3"> 
+
+  <div class="col-md-4 left-title">
+<h3>Leaves Pending Approval</h3>
+  </div>
+
+  <div class="col-md-4">
+    <div class="form-group leavetype-group">
+      <label for="exampleFormControlSelect1">Employees</label>
+      <select class="form-control" id="exampleFormControlSelect1">
+        <option>All Employees</option>
+        <option>Bhathi</option>
+        <option>Manju nath</option>
+        <option>Ajith</option>
+        <option>Sreedhar</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="form-group leavetype-group">
+      <label for="exampleFormControlSelect1">Leaves</label>
+      <select class="form-control" id="exampleFormControlSelect1">
+        <option>All Leave</option>
+        <option>Annual Leave</option>
+        <option>Medical Leave</option>
+        <option>Sick Leave</option>
+      </select>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="row">
+  <div class="col-md-12">
+  <div class="checkbox">
+    <label class="select-all">
+      <input type="checkbox" class="check" id="checkAll"> Select All
+    </label>
+
+   
+    
+  </div>
+</div>
+</div>
+
+<!-- BUTTONS APPROVE & REJECT -->
+<div class="button-fixed">
+  <button type="button" class="btn btn-common btn-approve"><img src="svg/approve-btn.svg"> Approve</button>
+  <button type="button" class="btn btn-common btn-reject ml-3"><img src="svg/reject-btn.svg"> Reject</button>
+  </div>
+  <!-- BUTTONS APPROVE & REJECT -->
+
+ 
+  
+
+<!-- CARD TABS -->
+<div class="card tab-card select">
+  <div class="row card-list">
+
+    <!-- CHECKBOX & ICON -->
+    <div class="col-md-3 tab-col-1">
+      <span class="checkbox">
+        <label>
+          <input type="checkbox" class="check">
+        </label>
+      </span>
+
+      <span><img src="svg/ann-leave-tab.svg"></span>
+    </div>
+    <!-- CHECKBOX & ICON -->
+
+    <!-- Leave Info -->
+    <div class="col-md-7 tab-col-2">
+      <h4>Annual Leave</h4>
+      <p class="name-line mb-1 mt-1">John Miachel - JM001</p>
+      <p class="date-info">20 Jan 2020 - 22 Jan 2020 <span>Duration : 3 Days</span> </p>
+    </div>
+    <!-- Leave Info -->
+
+<!-- edit & attachment -->
+<div class="col-md-2 tab-col-3">
+
+  <span class="text-right mr-3"><img data-container="body" data-toggle="popover" data-placement="right" data-content="Vacation" src="svg/vacation.svg"></img></span>
+
+  <span class="text-right mr-3"><img src="svg/attached.svg"></span>
+
+  <span class="text-right mr-3"><img id="popover-textarea" src="svg/remark.svg"></span>
+
+
+  <div id="myForm" class="hide" style="display: none;">
+    <form action="/echo/html/" id="popForm" method="get">
+        <div>
+           
+<textarea rows="2" name="about" id="about" class="form-control input-md"></textarea>
+    <button type="button" class="btn btn-submit mt-1" data-loading-text="Sending info..">Save</button>
+</div>
+    </form>
+</div>
+
+
+
+</div>
+<!-- edit & attachment -->
+</div>
+
+</div>
+
+
+<div class="card tab-card">
+  <div class="row card-list">
+
+    <!-- CHECKBOX & ICON -->
+    <div class="col-md-3 tab-col-1">
+      <span class="checkbox">
+        <label>
+          <input type="checkbox" class="check">
+        </label>
+      </span>
+
+      <span><img src="svg/marr-leave-tab.svg"></span>
+    </div>
+    <!-- CHECKBOX & ICON -->
+
+    <!-- Leave Info -->
+    <div class="col-md-7 tab-col-2">
+      <h4>Marriage Leave</h4>
+      <p class="name-line mb-1 mt-1">Samantha Ivy - SI003</p>
+      <p class="date-info">25 Jan 2020 - 29 Jan 2020  <span>Duration : 5 Days</span> </p>
+    </div>
+    <!-- Leave Info -->
+
+<!-- edit & attachment -->
+<div class="col-md-2 tab-col-3">
+  <span class="text-right mr-3"><img data-container="body" data-toggle="popover" data-placement="right" data-content="Vacation" src="svg/vacation.svg"></img></span>
+
+  <span class="text-right mr-3"><img src="svg/attached.svg"></span>
+
+  <span class="text-right mr-3"><img id="popover-textarea" src="svg/remark.svg"></span>
+</div>
+<!-- edit & attachment -->
+</div>
+
+</div>
+
+<div class="card tab-card">
+  <div class="row card-list">
+
+    <!-- CHECKBOX & ICON -->
+    <div class="col-md-3 tab-col-1">
+      <span class="checkbox">
+        <label>
+          <input type="checkbox" class="check">
+        </label>
+      </span>
+
+      <span><img src="svg/study-leave-tab.svg"></span>
+    </div>
+    <!-- CHECKBOX & ICON -->
+
+    <!-- Leave Info -->
+    <div class="col-md-7 tab-col-2">
+      <h4>Study Leave</h4>
+      <p class="name-line mb-1 mt-1">John Doe - JD004</p>
+      <p class="date-info">21 Jan 2020 - 30 Jan 2020    <span>Duration : 10 Days</span> </p>
+    </div>
+    <!-- Leave Info -->
+
+<!-- edit & attachment -->
+<div class="col-md-2 tab-col-3">
+  <span class="text-right mr-3"><img data-container="body" data-toggle="popover" data-placement="right" data-content="Vacation" src="svg/vacation.svg"></img></span>
+
+  <span class="text-right mr-3"><img src="svg/attached.svg"></span>
+
+  <span class="text-right mr-3"><img id="popover-textarea" src="svg/remark.svg"></span>
+</div>
+<!-- edit & attachment -->
+</div>
+
+</div>
+
+<div class="card tab-card">
+  <div class="row card-list">
+
+    <!-- CHECKBOX & ICON -->
+    <div class="col-md-3 tab-col-1">
+      <span class="checkbox">
+        <label>
+          <input type="checkbox" class="check">
+        </label>
+      </span>
+
+      <span><img src="svg/sick-leave-tab.svg"></span>
+    </div>
+    <!-- CHECKBOX & ICON -->
+
+    <!-- Leave Info -->
+    <div class="col-md-7 tab-col-2">
+      <h4>Sick Leave</h4>
+      <p class="name-line mb-1 mt-1">Sharmila Dev - SD004</p>
+      <p class="date-info">20 Jan 2020 - 22 Jan 2020 <span>Duration : 3 Days</span> </p>
+    </div>
+    <!-- Leave Info -->
+
+<!-- edit & attachment -->
+<div class="col-md-2 tab-col-3">
+  <span class="text-right mr-3"><img data-container="body" data-toggle="popover" data-placement="right" data-content="Vacation" src="svg/vacation.svg"></img></span>
+
+  <span class="text-right mr-3"><img src="svg/attached.svg"></span>
+
+  <span class="text-right mr-3"><img id="popover-textarea" src="svg/remark.svg"></span>
+</div>
+<!-- edit & attachment -->
+</div>
+
+</div>
+<!-- CARD TABS -->
+
+
+
+</div>
+</div>
+          
+
+ </main>
+
+
+     
+
+          
+
+            </div>
+          </div>
+        </section>
+  <!--*********************************Section 1*********************************-->
+
+</div>  
+
+
+
+<!-- ************************************************************************************************ -->
+
+
+
+<!-- SCRIPT -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <!-- SCRIPT -->
+
+ <script>
+  $("#checkAll").click(function () {
+     $(".check").prop('checked', $(this).prop('checked'));
+ });
+ 
+  </script>
+ 
+  <script>
+  $(function () {
+   $('[data-toggle="popover"]').popover()
+ })
+  </script>
+ 
+ <script>
+ $(function(){
+     $('#popover-textarea').popover({
+        
+         placement: 'bottom',
+         title: 'Textarea',
+         html:true,
+         content:  $('#myForm').html()
+     }).on('click', function(){
+      
+       $('.btn-submit').click(function(){
+        $('#result').after("form submitted by " + $('#email').val())
+         $.post('/echo/html/',  {
+           
+            
+            
+         }, function(r){
+           $('#pops').popover('hide')
+           $('#result').html('resonse from server could be here' )
+         })
+       })
+   })
+ })
+ 
+ </script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="309" height="162.233" viewBox="0 0 309 162.233">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#476dfa"/>
+      <stop offset="1" stop-color="#77d1d6"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0" y1="0.5" x2="1" y2="0.5" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="0" y1="0.5" x2="1" y2="0.5" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-6" x1="0" y1="0.5" x2="1" y2="0.5" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-7" x1="0" y1="0.5" x2="1" y2="0.5" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Group_873" data-name="Group 873" transform="translate(-862 -475.767)">
+    <text id="Sat" transform="translate(864.577 621.119)" fill="#82828e" font-size="6" font-family="Poppins-Regular, Poppins"><tspan x="3.541" y="6">Sat</tspan></text>
+    <text id="Fri" transform="translate(863.312 596.652)" fill="#82828e" font-size="6" font-family="Poppins-Regular, Poppins"><tspan x="7.83" y="6">Fri</tspan></text>
+    <text id="Thu" transform="translate(863.312 572.279)" fill="#82828e" font-size="6" font-family="Poppins-Regular, Poppins"><tspan x="3.642" y="6">Thu</tspan></text>
+    <text id="Wed" transform="translate(862 546.832)" fill="#82828e" font-size="6" font-family="Poppins-Regular, Poppins"><tspan x="2.248" y="6">Wed</tspan></text>
+    <text id="Tue" transform="translate(862 524.084)" fill="#82828e" font-size="6" font-family="Poppins-Regular, Poppins"><tspan x="5.074" y="6">Tue</tspan></text>
+    <text id="Mon" transform="translate(862 501.088)" fill="#82828e" font-size="6" font-family="Poppins-Regular, Poppins"><tspan x="3.034" y="6">Mon</tspan></text>
+    <text id="Sun" transform="translate(862 475.767)" fill="#82828e" font-size="6" font-family="Poppins-Regular, Poppins"><tspan x="4.678" y="6">Sun</tspan></text>
+    <g id="Group_798" data-name="Group 798" transform="translate(880.505 479.153)">
+      <line id="Line_20" data-name="Line 20" x2="290.495" transform="translate(0 121.604)" fill="none" stroke="#82828e" stroke-miterlimit="10" stroke-width="0.248"/>
+      <line id="Line_21" data-name="Line 21" x2="290.495" transform="translate(0 96.656)" fill="none" stroke="#82828e" stroke-miterlimit="10" stroke-width="0.248"/>
+      <line id="Line_22" data-name="Line 22" x2="290.495" transform="translate(0 71.709)" fill="none" stroke="#82828e" stroke-miterlimit="10" stroke-width="0.248"/>
+      <line id="Line_23" data-name="Line 23" x2="290.495" transform="translate(0 48.262)" fill="none" stroke="#82828e" stroke-miterlimit="10" stroke-width="0.248"/>
+      <line id="Line_24" data-name="Line 24" x2="290.495" transform="translate(0 24.815)" fill="none" stroke="#82828e" stroke-miterlimit="10" stroke-width="0.248"/>
+      <path id="Path_913" data-name="Path 913" d="M721.609,343.369H431.115V488.98H721.609" transform="translate(-431.115 -343.369)" fill="none" stroke="#82828e" stroke-miterlimit="10" stroke-width="0.248"/>
+    </g>
+    <g id="Group_805" data-name="Group 805" transform="translate(879.094 620.218)">
+      <path id="Path_914" data-name="Path 914" d="M436.2,427.781a3.26,3.26,0,1,1-3.258-3.128A3.194,3.194,0,0,1,436.2,427.781Z" transform="translate(-429.685 -424.653)" fill="url(#linear-gradient)"/>
+      <path id="Path_915" data-name="Path 915" d="M433.908,427.145a1.63,1.63,0,1,1-1.629-1.565A1.6,1.6,0,0,1,433.908,427.145Z" transform="translate(-429.023 -424.017)" fill="#fff"/>
+    </g>
+    <g id="Group_799" data-name="Group 799" transform="translate(973.697 597.63)">
+      <path id="Path_916" data-name="Path 916" d="M447.233,416.756a3.261,3.261,0,1,1-3.258-3.126A3.194,3.194,0,0,1,447.233,416.756Z" transform="translate(-440.717 -413.63)" fill="url(#linear-gradient-2)"/>
+      <path id="Path_917" data-name="Path 917" d="M444.941,416.12a1.63,1.63,0,1,1-1.629-1.563A1.6,1.6,0,0,1,444.941,416.12Z" transform="translate(-440.054 -412.994)" fill="#fff"/>
+    </g>
+    <g id="Group_800" data-name="Group 800" transform="translate(997.842 573.183)">
+      <path id="Path_918" data-name="Path 918" d="M468.666,402.258a3.26,3.26,0,1,1-3.258-3.126A3.194,3.194,0,0,1,468.666,402.258Z" transform="translate(-462.152 -399.132)" fill="url(#linear-gradient)"/>
+      <path id="Path_919" data-name="Path 919" d="M466.375,401.622a1.63,1.63,0,1,1-1.629-1.563A1.6,1.6,0,0,1,466.375,401.622Z" transform="translate(-461.49 -398.496)" fill="#fff"/>
+    </g>
+    <g id="Group_803" data-name="Group 803" transform="translate(974.097 524.914)">
+      <path id="Path_921" data-name="Path 921" d="M482.459,373.635a3.261,3.261,0,1,1-3.258-3.128A3.2,3.2,0,0,1,482.459,373.635Z" transform="translate(-475.943 -370.507)" fill="url(#linear-gradient-4)"/>
+      <path id="Path_922" data-name="Path 922" d="M480.167,373a1.63,1.63,0,1,1-1.629-1.565A1.6,1.6,0,0,1,480.167,373Z" transform="translate(-475.28 -369.871)" fill="#fff"/>
+    </g>
+    <g id="Group_804" data-name="Group 804" transform="translate(983.876 547.674)">
+      <path id="Path_923" data-name="Path 923" d="M488.256,383.572A3.26,3.26,0,1,1,485,380.446,3.194,3.194,0,0,1,488.256,383.572Z" transform="translate(-481.742 -380.446)" fill="url(#linear-gradient)"/>
+      <path id="Path_924" data-name="Path 924" d="M485.964,382.936a1.629,1.629,0,1,1-1.629-1.563A1.6,1.6,0,0,1,485.964,382.936Z" transform="translate(-481.079 -379.81)" fill="#fff"/>
+    </g>
+    <g id="Group_806" data-name="Group 806" transform="translate(980.629 500.46)">
+      <path id="Path_925" data-name="Path 925" d="M497.007,359.726a3.261,3.261,0,1,1-3.258-3.128A3.2,3.2,0,0,1,497.007,359.726Z" transform="translate(-490.491 -356.598)" fill="url(#linear-gradient-6)"/>
+      <ellipse id="Ellipse_27" data-name="Ellipse 27" cx="1.629" cy="1.564" rx="1.629" ry="1.564" transform="translate(1.63 1.564)" fill="#fff"/>
+    </g>
+    <g id="Group_808" data-name="Group 808" transform="translate(1035.354 475.97)">
+      <path id="Path_928" data-name="Path 928" d="M521.156,345.2a3.26,3.26,0,1,1-3.256-3.128A3.194,3.194,0,0,1,521.156,345.2Z" transform="translate(-514.642 -342.075)" fill="url(#linear-gradient-7)"/>
+      <path id="Path_929" data-name="Path 929" d="M518.866,344.566A1.63,1.63,0,1,1,517.237,343,1.6,1.6,0,0,1,518.866,344.566Z" transform="translate(-513.979 -341.438)" fill="#fff"/>
+    </g>
+    <text id="_2_4_6_8_10_12_14_16_18_20_22_24" data-name=" 2             4            6            8            10            12            14            16            18            20            22            24" transform="translate(1027 636)" fill="#82828e" font-size="6" font-family="Poppins-Light, Poppins" font-weight="300" letter-spacing="0.005em"><tspan x="-143.85" y="0" xml:space="preserve"> 2             4            6            8            10            12            14            16            18            20            22            24</tspan></text>
+  </g>
+</svg>

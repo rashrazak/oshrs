@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="81" viewBox="0 0 80 81">
+  <defs>
+    <filter id="iconmonstr-time-17" x="12.512" y="15.896" width="54.928" height="54.928" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_874" data-name="Group 874" transform="translate(0.278 -0.032)">
+    <ellipse id="Ellipse_487" data-name="Ellipse 487" cx="40" cy="40.5" rx="40" ry="40.5" transform="translate(-0.278 0.032)" fill="#e8aa35"/>
+    <g transform="matrix(1, 0, 0, 1, -0.28, 0.03)" filter="url(#iconmonstr-time-17)">
+      <path id="iconmonstr-time-17-2" data-name="iconmonstr-time-17" d="M36.928,18.464A18.464,18.464,0,0,1,0,18.464H3.077A15.439,15.439,0,1,0,7.541,7.658l3.171,3.171L0,12.912,2.008,2.122,5.361,5.476A18.449,18.449,0,0,1,36.928,18.464Zm-20-9.232V21.541H27.7V18.464H20V9.232Z" transform="translate(21.51 21.9)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

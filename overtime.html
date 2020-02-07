@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <title>Corazon 2.0 | Overtime Dashboard</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<!-- CSS -->
+
+<!-- font -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+<!-- font -->
+
+<!-- font awsome icons -->
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<link rel="stylesheet" href="fontawsome/fontawesome-free/css/all.min.css">
+<!-- font awsome icons -->
+</head>
+<body class="background-cover overtime">
+  <!--********************************* NAVBAR *********************************-->
+  <nav class="navbar navbar-expand navbar-dark flex-column flex-md-row top-navbar-fixed">
+    <a class="navbar-brand logo-corazon" href="#"><img src="svg/logo.svg" title="Corazon 2.0"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto pl-4">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"><img src="svg/home.svg"> <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <!-- profile dropdown & notification -->
+      <form class="form-inline my-2 my-lg-0">
+
+<!-- notifi -->
+<button class="custom-btn mr-5">
+  <ul>
+<li class="nav-item dropdown">
+<a class="nav-link" data-toggle="dropdown" href="#">
+      <i class="fa fa-bell" aria-hidden="true">
+    <span class="badge badge-danger">07</span>
+  </i></a>
+
+  <div class="dropdown-menu dropdown-menu-lg dropdown-menu-left notification-dropdown">
+    <span class="dropdown-item dropdown-header"><h6 class="m-0">07 Notifications</h6></span>
+    <div class="dropdown-divider"></div>
+    <a href="#" class="dropdown-item">
+      <i class="fas fa-envelope mr-2"></i> 4 new messages
+      <span class="float-right text-muted text-sm">3 mins</span>
+    </a>
+    <div class="dropdown-divider"></div>
+    <a href="#" class="dropdown-item">
+      <i class="fas fa-users mr-2"></i> 8 friend requests
+      <span class="float-right text-muted text-sm">12 hours</span>
+    </a>
+    <div class="dropdown-divider"></div>
+    <a href="#" class="dropdown-item">
+      <i class="fas fa-file mr-2"></i> 3 new reports
+      <span class="float-right text-muted text-sm">2 days</span>
+    </a>
+    <div class="dropdown-divider"></div>
+    <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+  </div>
+</li>
+</ul>
+</button>
+<!-- notifi -->
+
+  
+
+  
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-4" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-list-4">
+          <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle toggle-icon" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="img/profile.png" width="40" height="40" class="rounded-circle"> Johny Vino
+              </a>
+
+              <div class="dropdown-menu profile-dropdown" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Account</a>
+
+               <a class="dropdown-item" data-toggle="modal" data-target="#exampleModal" data-target=".animate" data-ui-class="a-zoom" href="#">Edit Profile</a>
+
+               <a class="dropdown-item" data-toggle="modal" data-target=".animate" data-ui-class="a-zoom" href="#">Password Change</a>
+              
+                <a class="dropdown-item" href="#">Log Out</a>
+              </div>
+      </form>
+      <!-- profile dropdown & notification -->
+    </div>
+  </nav>
+<!--********************************* NAVBAR *********************************-->
+
+  <!--*********************************Section 1*********************************-->
+  </section>
+          <div class="container-fluid">
+            <div class="row flex-xl-nowrap">
+
+              <!-- left-side-menu -->
+             <div class="col-12 col-md-auto col-xl-auto p-0 bd-sidebar left-sidebar-fixed overtime">
+              <div class="vertical-block-top">
+              <ul>
+                <li><img src="svg/overtime-sidenav.svg"></li>
+              </ul>
+              </div>
+               <div class="vertical-block">
+                <h6>Overtime</h6>
+               </div>
+               <hr class="hr-line">
+
+
+               <div class="vertical-block-bottom">
+               <ul>
+                 <li><a href="#"><img src="svg/approver.svg"></a></li>
+                 <li><a href="#"><img src="svg/hr-admin.svg"></a></li>
+               </ul>
+               <hr class="hr-line">
+               <ul>
+               <li><a href="#"><img src="svg/contact.svg"></a></li>
+               <li><a href="#"><img src="svg/email.svg"></a></li>
+               <li><a href="#"><img src="svg/settings.svg"></a></li>
+               
+              </ul>
+               </div>
+             
+             </div>
+             <!-- left-side-menu -->
+
+             
+             <main class="col-12 col-md-12 col-xl-12 bd-content" role="main">
+
+              <div class="leave-info">
+                <h3>Total Overtime as of <span>30 JAN 2020</span> <img src="svg/datepik-main.svg"></h3>
+              </div>
+
+              <!-- Info board-->
+              <div class="row">
+                <div class="col-lg-11 mx-auto text-center">
+            <d/div class="info-board">
+
+              <li>
+                <div class="approved-hrs">
+                <div class="app-info">
+                <img src="svg/app-ovt.svg">
+                <div class="green-approved">10 hrs</div>
+              </div>
+              </div>
+              <div class="icon-caption">Approved</div>
+              </li>
+              
+              
+              <li>
+                <div class="pending-hrs">
+                <div class="rej-info">
+                  <img src="svg/pen-ovt.svg">
+                  <div class="yellow-pending">10 hrs</div>
+                </div>
+                </div>
+                <div class="icon-caption">Pending</div>
+              </li>
+
+              </div>
+            </ul>
+            </div>
+              <!-- Info board -->
+
+
+              <!-- accordian tab function -->
+              <div class="row">
+      <div class="col-lg-11 mx-auto">
+        <div class="special-text">
+          <h4>Request Overtime</h4>
+          <span class="message-success">Leave Successfully Submitted !</span>
+        <!-- leave type -->
+        <div class="row">
+
+          <div class="col-md-3 pr-0">
+        <div class="form-group leavetype-group">
+          <label for="exampleFormControlSelect1">OT Type</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Select your OT</option>
+            <option>ot 1</option>
+            <option>ot 2</option>
+            <option>ot 3</option>
+          </select>
+        </div>
+        </div>
+
+        <div class="col-md-3 pl-2 pr-2">
+          <div class="form-group leavetype-group">
+            <label>Date</label>
+        <div class="input-group">
+          <input class="form-control" style="border-right: hidden;" placeholder="MM/DD/YYYY"/><span class="input-group-append input-group-addon">
+            <span style="height: calc(2.25rem + 2px); border-radius: 0;" class="input-group-text group-custom"><i class="fas fa-calendar-alt"></i></span></span>
+          
+          
+        </div>
+      </div>
+      </div>
+
+      <div class="col-md-2 pl-0 pr-1">
+        <div class="form-group leavetype-group">
+          <div class="form-group">
+            <label>Time picker:</label>
+
+            <div class="input-group date" id="timepicker" data-target-input="nearest">
+              <input type="text" class="form-control datetimepicker-input" style="border-right:hidden;" data-target="#timepicker"/>
+              <div class="input-group-append" data-target="#timepicker" data-toggle="datetimepicker">
+                  <div class="input-group-text group-custom"><i class="far fa-clock"></i></div>
+              </div>
+              </div>
+            <!-- /.input group -->
+          </div>
+    </div>
+    </div>
+
+    <div class="col-md-2 pl-0 pr-1">
+      <div class="form-group leavetype-group">
+        <div class="form-group">
+          <label>Time picker:</label>
+
+          <div class="input-group date" id="timepicker" data-target-input="nearest">
+            <input type="text" class="form-control datetimepicker-input" style="border-right: hidden;" data-target="#timepicker"/>
+            <div class="input-group-append" data-target="#timepicker" data-toggle="datetimepicker">
+                <div class="input-group-text group-custom"><i class="far fa-clock"></i></div>
+            </div>
+            </div>
+          <!-- /.input group -->
+        </div>
+  </div>
+  </div>
+
+    <div class="col-md-2 pl-1">
+      <button type="button" class="btn btn-submit">SUBMIT</button>
+      </div>
+
+      </div>
+     
+
+
+
+        </div>
+        <!--leave type -->
+         
+        </div>
+     
+               </div>
+               <!-- accordian tab function -->
+ 
+         
+<!-- leave status today -->
+<div class="row">
+  <div class="col-lg-9 mx-auto text-center leave-status">
+  <h4>My Overtime Status as of <span>Today</span></h4>
+
+  <div class="row">
+  <div class="col-md-3 colum-inner-content">
+<img src="svg/leave-pending.svg" title="Leave Pending Approvals">
+<p>OT Pending Approval</p>
+
+<a href="#" class="btn btn-sm animated-button thar-four">2 Records</a> 
+  </div>
+
+  <div class="col-md-3 colum-inner-content">
+    <img src="svg/upcomin-leave.svg" title="Upcoming Leaves">
+    <p>Approved Overtime</p>
+    
+    <a href="#" class="btn btn-sm animated-button thar-four">2 Records</a> 
+      </div>
+
+      <div class="col-md-3 colum-inner-content">
+        <img src="svg/approve-panel.svg" title="Approval Panel">
+        <p>Approval Panel</p>
+        
+        <a href="#" class="btn btn-sm animated-button thar-four">Approval Panel</a> 
+          </div>
+
+          <div class="col-md-3 colum-inner-content">
+            <img src="svg/leave-history.svg" title="Leave History">
+            <p>History of Leave</p>
+            
+            <a href="#" class="btn btn-sm animated-button thar-four">Overtime History</a> 
+              </div>
+</div>
+
+</div>
+</div>
+<!-- leave status today -->
+
+
+<!-- TABLE GRID AFTER CLICK NO.OF RECORDS*****************Raj************************ -->
+<div class="row mt-3">
+<div class="col-lg-11 mx-auto">
+
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body table-responsive p-0">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>OT Type</th>
+              <th>Date</th>
+              <th>Start Time</th>
+              <th>End Time</th>
+              <th>Duration</th>
+              <th>Remarks</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Extra Work</td>
+              <td>30 Jan 20</td>
+              <td>10:30 AM</td>
+              <td>3:30 PM</td>
+              <td>H Hrs</td>
+              <td>Extra work </td>
+              <td><span class="badge bg-success">Approved</span></td>
+              
+              
+              
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- /.card-body -->
+    </div>
+    <!-- /.card -->
+  </div>
+</div>
+
+</div>
+</div>
+<!-- TABLE GRID AFTER CLICK NO.OF RECORDS*****************Raj************************ -->
+             </main>
+
+
+        <div class="d-xl-block col-md-auto col-xl-auto p-0 right-sidebar-fixed">
+          <div class="tab-button-list">
+
+            <a class="dashboard-btn active"> <p> Overtime <img src="svg/overtime-dark.svg"></p> 
+            </a>
+
+            <a class="dashboard-btn dashboard"> <p>Dashboard <img src="svg/dashboard-white.svg"></p> 
+            </a>
+
+            <a class="dashboard-btn profile"> <p>Profile <img src="svg/profile.svg"></p> 
+            </a>
+
+            <a class="dashboard-btn leave"> <p> Leave <img src="svg/leave.svg"></p> 
+            </a>
+
+            <a class="dashboard-btn expense"> <p>Expense <img src="svg/expense.svg"></p> 
+            </a>
+
+            <a class="dashboard-btn ta"> <p>T&A <img src="svg/ta.svg"></p> 
+            </a>
+
+            <a class="dashboard-btn payslip"> <p>Payslip <img src="svg/file (7).svg"></p> 
+            </a>
+
+          </div>
+        
+ 
+ 
+            </div>
+
+          
+
+            </div>
+          </div>
+        </section>
+  <!--*********************************Section 1*********************************-->
+        
+  <footer class="footer fixed-bottom-footer">
+    <div class="container">
+      <p class="footer-text m-0">Copyright ©2020 Corazon 2.0.0 | Powered by <span><a href="#">OSHRS</a></span></p>
+    </div>
+  </footer>
+
+
+
+<!-- Modal for Change password -->
+<div class="modal animate modal-custom-style" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title" id="exampleModalLabel">Change Password</h6>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><i class="fa fa-times-circle"></i></span>
+        </button>
+      </div>
+      <div class="modal-body p-lg">
+        <div class="row">
+          <div class="col-md-12 custom-input-fields">
+              
+              <label>Current Password</label>
+              <div class="form-group pass_show"> 
+                      <input type="password" value="raj123!@#" class="form-control" placeholder="Current Password"> 
+                  </div> 
+                 <label>New Password</label>
+                  <div class="form-group pass_show"> 
+                      <input type="password" value="ajith123!@#" class="form-control" placeholder="New Password"> 
+                  </div> 
+                 <label>Confirm Password</label>
+                  <div class="form-group pass_show"> 
+                      <input type="password" value="ajith123!@#" class="form-control" placeholder="Confirm Password"> 
+                  </div> 
+                  
+          </div>  
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary custom-btn-modal">Change Password</button>
+        <button type="button" class="btn btn-secondary custom-btn-modal secondary" data-dismiss="modal">Cancel</button>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- Modal for Change password -->
+
+<!-- ************************************************************************************************ -->
+
+<!-- Modal for Edit profile Pic -->
+<div class="modal fade animate modal-custom-style" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title" id="exampleModalLabel">Change Profile Picture</h6>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><i class="fa fa-times-circle"></i></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="avatar-upload">
+          <div class="avatar-edit">
+              <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+              <label for="imageUpload"></label>
+          </div>
+          <div class="avatar-preview">
+              <div id="imagePreview" style="background-image: url(http://i.pravatar.cc/500?img=7);">
+              </div>
+            </div>
+            <h6 class="text-center mt-2 mb-0">Ajith</h6>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary custom-btn-modal" style="min-width: 100px;">Save</button>
+        <button type="button" class="btn btn-secondary custom-btn-modal secondary" data-dismiss="modal">Cancel</button>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- Modal for Edit profile Pic -->
+
+<!-- SCRIPT -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <!-- SCRIPT -->
+
+
+ <!-- MODAL ANIMATION SCRIPT -->
+ <script>
+  $(function(){
+	$('[role=dialog]')
+	    .on('show.bs.modal', function(e) {
+		    $(this)
+		        .find('[role=document]')
+		            .removeClass()
+		            .addClass('modal-dialog ' + $(e.relatedTarget).data('ui-class'))
+	})
+})
+ </script>
+ <!-- MODAL ANIMATION SCRIPT -->
+
+ <!-- Forgot password hide/show -->
+ <script>
+ $(document).ready(function(){
+$('.pass_show').append('<span class="ptxt"><i class="fa fa-eye-slash"></i></span>');  
+});
+  
+
+$(document).on('click','.pass_show .ptxt', function(){ 
+
+$(this).text($(this).text() == "Show" ? "Hide" : "Show");
+
+$(this).prev().attr('type', function(index, attr){return attr == 'password' ? 'text' : 'password'; }); 
+
+});  
+ </script>
+ <!-- Forgot password hide/show -->
+
+ <script>
+  $('#timepicker').datetimepicker({
+    format: 'LT'
+  })
+  </script>
+ <script>
+ if (/Mobi/.test(navigator.userAgent)) {
+  // if mobile device, use native pickers
+  $(".date input").attr("type", "date");
+  $(".time input").attr("type", "time");
+} else {
+  // if desktop device, use DateTimePicker
+  $("#datepicker").datetimepicker({
+    useCurrent: false,
+    format: "L",
+    showTodayButton: true,
+    icons: {
+      next: "fa fa-chevron-right",
+      previous: "fa fa-chevron-left",
+      today: 'todayText',
+    }
+  });
+  $("#timepicker").datetimepicker({
+    format: "LT",
+    icons: {
+      up: "fa fa-chevron-up",
+      down: "fa fa-chevron-down"
+    }
+  });
+}
+ </script>
+
+
+
+
+</body>
+</html>

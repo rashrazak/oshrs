@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="73" height="73" viewBox="0 0 73 73">
+  <defs>
+    <filter id="Rectangle_40" x="0" y="0" width="73" height="73" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_877" data-name="Group 877" transform="translate(-1597 -8672)">
+    <g id="Group_818" data-name="Group 818" transform="translate(1606.434 8678.434)">
+      <g transform="matrix(1, 0, 0, 1, -9.43, -6.43)" filter="url(#Rectangle_40)">
+        <rect id="Rectangle_40-2" data-name="Rectangle 40" width="55" height="55" rx="27.5" transform="translate(9 6)" fill="#f5c95c"/>
+      </g>
+    </g>
+    <g id="edit_3_" data-name="edit (3)" transform="translate(1622 8694)">
+      <g id="Group_644" data-name="Group 644">
+        <g id="Group_643" data-name="Group 643">
+          <path id="Path_1350" data-name="Path 1350" d="M0,82.007V86.79H4.783L18.9,72.676l-4.783-4.783Z" transform="translate(0 -63.834)" fill="#fff"/>
+          <path id="Path_1351" data-name="Path 1351" d="M265.784,3.352,262.805.373a1.278,1.278,0,0,0-1.8,0l-2.334,2.334,4.783,4.783,2.334-2.334A1.278,1.278,0,0,0,265.784,3.352Z" transform="translate(-243.2 0)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

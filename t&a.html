@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <title>Corazon 2.0 | T&A Dashboard</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/t&a.css" type="text/css">
+    <!-- CSS -->
+    
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    <!-- font -->
+    
+    <!-- font awsome icons -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="fontawsome/fontawesome-free/css/all.min.css">
+    <!-- font awsome icons -->
+</head>
+
+<body class="background-cover">
+    <!--********************************* NAVBAR *********************************-->
+    <nav class="navbar navbar-expand navbar-dark flex-column flex-md-row top-navbar-fixed">
+        <a class="navbar-brand logo-corazon" href="#"><img src="svg/logo.svg" title="Corazon 2.0"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto pl-4">
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><img src="svg/home.svg"> <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        <!-- profile dropdown & notification -->
+        <form class="form-inline my-2 my-lg-0">
+            
+        <!-- notifi -->
+        <button class="custom-btn mr-5">
+            <ul>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell" aria-hidden="true">
+                            <span class="badge badge-danger">07</span>
+                        </i></a>
+                        
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-left notification-dropdown">
+                            <span class="dropdown-item dropdown-header">
+                                <h6 class="m-0">07 Notifications</h6>
+                            </span>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-envelope mr-2"></i> 4 new messages
+                                <span class="float-right text-muted text-sm">3 mins</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-users mr-2"></i> 8 friend requests
+                                <span class="float-right text-muted text-sm">12 hours</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-file mr-2"></i> 3 new reports
+                                <span class="float-right text-muted text-sm">2 days</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+                        </div>
+                    </li>
+                </ul>
+            </button>
+            <!-- notifi -->
+                
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-4"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-list-4">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle toggle-icon" href="#" id="navbarDropdownMenuLink"
+                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="img/profile.png" width="40" height="40" class="rounded-circle"> Johny Vino
+                    </a>
+                    <div class="dropdown-menu profile-dropdown" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Account</a>
+                        
+                        <a class="dropdown-item" data-toggle="modal" data-target="#exampleModal"
+                        data-target=".animate" data-ui-class="a-zoom" href="#">Edit Profile</a>
+                        
+                        <a class="dropdown-item" data-toggle="modal" data-target=".animate"
+                        data-ui-class="a-zoom" href="#">Password Change</a>
+                        
+                        <a class="dropdown-item" href="#">Log Out</a>
+                    </div>
+                </form>
+                <!-- profile dropdown & notification -->
+            </div>
+        </nav>
+        <!--********************************* NAVBAR *********************************-->
+        
+        <!--*********************************Section 1*********************************-->
+    </section>
+    <div class="container-fluid">
+        <div class="row flex-xl-nowrap">
+            
+            <!-- left-side-menu -->
+            <div class="col-12 col-md-auto col-xl-auto p-0 bd-sidebar left-sidebar-fixed ta">
+                <div class="vertical-block-top">
+                    <ul>
+                        <li><img src="svg/leave-sidenav.svg"></li>
+                    </ul>
+                </div>
+                <div class="vertical-block">
+                    <h6>T&A</h6>
+                </div>
+                <hr class="hr-line">
+                <div class="vertical-block-bottom">
+                    <ul>
+                        <li><a href="#"><img src="svg/approver.svg"></a></li>
+                        <li><a href="#"><img src="svg/hr-admin.svg"></a></li>
+                    </ul>
+                    <hr class="hr-line">
+                    <ul>
+                        <li><a href="#"><img src="svg/contact.svg"></a></li>
+                        <li><a href="#"><img src="svg/email.svg"></a></li>
+                        <li><a href="#"><img src="svg/settings.svg"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- left-side-menu -->
+            
+            
+            <main class="col-12 col-md-12 col-xl-12 bd-content" role="main">
+                <div class="leave-info">
+                    <h3>My T&A as of <span>4 Feb  2020</span> <img src="svg/datepik-main.svg"></h3>
+                </div>
+                
+                <!-- carousel slider -->
+                <div class="row">
+                    <div class="col-lg-11 mx-auto">
+                        <div class="text-center my-3">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="row">
+                                    <div class="container flex-box">
+                                        <div class="">
+                                            <span class="icon-oval">
+                                                <span class="oval-big ta-hours"><h4>106 <span><p>Hours</p></span></h4></span> 
+                                                <p>Total Hours</p>
+                                            </span>
+                                        </div>
+                                        <div class="">
+                                            <span class="icon-oval">
+                                                <span class="oval-big ta-hours"><h4>96 <span><p>Hours</p></span></h4></span>
+                                                <p>Worked Hours</p>
+                                            </span>
+                                        </div>
+                                        <div class="">
+                                            <span class="icon-oval">
+                                                <span class="oval-big ta-hours"><h4>69 <span><p>Hours</p></span></h4></span>
+                                                <p>Overtime Hours</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- carousel slider -->
+                
+                
+                <!-- accordian tab function -->
+                <div class="row">
+                    <div class="col-lg-11 mx-auto">
+                        <div class="special-text ta-special-text">
+                            <h4>04 Feb 2020 <span>Morning Shift: 9am - 6pm</span> </h4>
+                            <!-- ta type -->
+                            <div class="container container-ta">
+                                <div class="row form-type">
+                                    <div class="col-md-2">
+                                        <div class="form-group ta-form-clock">
+                                            <label for="exampleFormControlSelect1">Clock In</label>
+                                            <input type="text" class="form-control form-clock" id="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group ta-form-clock">
+                                            <label for="exampleFormControlSelect1">Clock out</label>
+                                            <input type="password" class="form-control form-clock" id="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group ta-form-clock">
+                                            <label for="exampleFormControlSelect1">Remarks</label>
+                                            <input type="password" class="form-control form-remarks" id="inputPassword">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 offset-md-1">
+                                        <button type="button" class="btn btn-save">SAVE</button>
+                                        <button type="button" class="btn btn-submit">SUBMIT</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- <hr class="mt-2 mb-2"> -->
+                            
+                            <!-- Hidden Content -->
+                            <div class="container">
+                                <div class="row pb-3">
+                                    <div class="container-table">
+                                        <table>
+                                            <thead>
+                                                <th>Punch In</th>
+                                                <th>Punch Out</th>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><input type="password" class="form-control form-clock-2" id=""></td>
+                                                    <td><input type="password" class="form-control form-clock-2" id=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="password" class="form-control form-clock-2" id=""></td>
+                                                    <td><input type="password" class="form-control form-clock-2" id=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="password" class="form-control form-clock-2" id=""></td>
+                                                    <td><input type="password" class="form-control form-clock-2" id=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="password" class="form-control form-clock-2" id=""></td>
+                                                    <td><input type="password" class="form-control form-clock-2" id=""></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            
+                            <!-- Hidden Content -->
+                            
+                        </div>
+                        <!--leave type -->
+                        
+                    </div>
+                    <button class="expand-button">
+                        View Punch-card <br><i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <!-- accordian tab function -->
+                
+                
+                <!-- leave status today -->
+                <div class="row">
+                    <div class="col-lg-9 mx-auto text-center leave-status">
+                        <h4>My T&A Status as of <span>Today</span></h4>
+                        <div class="row">
+                            <div class="col-md-3 colum-inner-content">
+                                <img src="svg/leave-pending.svg" title="Leave Pending Approvals">
+                                <p>Draft</p>
+                                <a href="#" class="btn btn-sm animated-button thar-four">2 Records</a>
+                            </div>
+                            <div class="col-md-3 colum-inner-content">
+                                <img src="svg/upcomin-leave.svg" title="Upcoming Leaves">
+                                <p>Pending Approval</p>
+                                <a href="#" class="btn btn-sm animated-button thar-four">2 Records</a>
+                            </div>
+                            <div class="col-md-3 colum-inner-content">
+                                <img src="svg/approve-panel.svg" title="Approval Panel">
+                                <p>Approved</p>
+                                <a href="#" class="btn btn-sm animated-button thar-four">Approval Panel</a>
+                            </div>
+                            <div class="col-md-3 colum-inner-content">
+                                <img src="svg/leave-history.svg" title="Leave History">
+                                <p>History of Leave</p>
+                                <a href="#" class="btn btn-sm animated-button thar-four">Leave History</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- leave status today -->
+                
+                
+                <!-- TABLE GRID AFTER CLICK NO.OF RECORDS*****************Raj************************ -->
+                <div class="row mt-3">
+                    <div class="col-lg-11 mx-auto">
+                        
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body table-responsive p-0">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>Leave Type</th>
+                                                    <th>Start</th>
+                                                    <th>End</th>
+                                                    <th>Duration</th>
+                                                    <th>Remarks</th>
+                                                    <th>attachment</th>
+                                                    <th>Status</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Annual Leave</td>
+                                                    <td>13 Jan 20</td>
+                                                    <td>17 Jan 20</td>
+                                                    <td>5 Days</td>
+                                                    <td>Vacation</td>
+                                                    <td class="text-center"><img src="svg/attached.svg"></td>
+                                                    <td><span class="badge bg-warning">Pending</span></td>
+                                                    <td><button class="btn btn-danger table-btn">Withdraw</button></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- /.card-body -->
+                                </div>
+                                <!-- /.card -->
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- TABLE GRID AFTER CLICK NO.OF RECORDS*****************Raj************************ -->
+            </main>
+            
+            
+            <div class="d-xl-block col-md-auto col-xl-auto p-0 right-sidebar-fixed">
+                <div class="tab-button-list">
+                    
+                    <a class="dashboard-btn active">
+                        <p> Leave <img src="svg/leave-dark.svg"></p>
+                    </a>
+                    
+                    <a class="dashboard-btn dashboard">
+                        <p>Dashboard <img src="svg/dashboard-white.svg"></p>
+                    </a>
+                    
+                    <a class="dashboard-btn profile">
+                        <p>Profile <img src="svg/profile.svg"></p>
+                    </a>
+                    
+                    <a class="dashboard-btn expense">
+                        <p>Expense <img src="svg/expense.svg"></p>
+                    </a>
+                    
+                    <a class="dashboard-btn ta">
+                        <p>T&A <img src="svg/ta.svg"></p>
+                    </a>
+                    
+                    <a class="dashboard-btn overtime">
+                        <p>Overtime <img src="svg/overtime.svg"></p>
+                    </a>
+                    
+                    <a class="dashboard-btn payslip">
+                        <p>Payslip <img src="svg/file (7).svg"></p>
+                    </a>
+                    
+                </div>
+                
+                
+                
+            </div>
+            
+            
+            
+        </div>
+    </div>
+</section>
+<!--*********************************Section 1*********************************-->
+
+<footer class="footer fixed-bottom-footer">
+    <div class="container">
+        <p class="footer-text m-0">Copyright ©2020 Corazon 2.0.0 | Powered by <span><a href="#">OSHRS</a></span></p>
+    </div>
+</footer>
+
+
+
+<!-- Modal for Change password -->
+<div class="modal animate modal-custom-style" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+aria-hidden="true" data-backdrop="true">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h6 class="modal-title" id="exampleModalLabel">Change Password</h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"><i class="fa fa-times-circle"></i></span>
+            </button>
+        </div>
+        <div class="modal-body p-lg">
+            <div class="row">
+                <div class="col-md-12 custom-input-fields">
+                    
+                    <label>Current Password</label>
+                    <div class="form-group pass_show">
+                        <input type="password" value="raj123!@#" class="form-control"
+                        placeholder="Current Password">
+                    </div>
+                    <label>New Password</label>
+                    <div class="form-group pass_show">
+                        <input type="password" value="ajith123!@#" class="form-control"
+                        placeholder="New Password">
+                    </div>
+                    <label>Confirm Password</label>
+                    <div class="form-group pass_show">
+                        <input type="password" value="ajith123!@#" class="form-control"
+                        placeholder="Confirm Password">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary custom-btn-modal">Change Password</button>
+            <button type="button" class="btn btn-secondary custom-btn-modal secondary"
+            data-dismiss="modal">Cancel</button>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Modal for Change password -->
+
+<!-- ************************************************************************************************ -->
+
+<!-- Modal for Edit profile Pic -->
+<div class="modal fade animate modal-custom-style" id="exampleModal" tabindex="-1" role="dialog"
+aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h6 class="modal-title" id="exampleModalLabel">Change Profile Picture</h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"><i class="fa fa-times-circle"></i></span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="avatar-upload">
+                <div class="avatar-edit">
+                    <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                    <label for="imageUpload"></label>
+                </div>
+                <div class="avatar-preview">
+                    <div id="imagePreview" style="background-image: url(http://i.pravatar.cc/500?img=7);">
+                    </div>
+                </div>
+                <h6 class="text-center mt-2 mb-0">Ajith</h6>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary custom-btn-modal"
+            style="min-width: 100px;">Save</button>
+            <button type="button" class="btn btn-secondary custom-btn-modal secondary"
+            data-dismiss="modal">Cancel</button>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Modal for Edit profile Pic -->
+
+<!-- SCRIPT -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+crossorigin="anonymous"></script>
+<!-- SCRIPT -->
+
+
+<!-- MODAL ANIMATION SCRIPT -->
+<script>
+    $(function () {
+        $('[role=dialog]')
+        .on('show.bs.modal', function (e) {
+            $(this)
+            .find('[role=document]')
+            .removeClass()
+            .addClass('modal-dialog ' + $(e.relatedTarget).data('ui-class'))
+        })
+    })
+</script>
+<!-- MODAL ANIMATION SCRIPT -->
+
+<!-- view more function -->
+<script>
+    $('.expand-button').on('click', function () {
+        $('.special-text').toggleClass('-expanded');
+        
+        if ($('.special-text').hasClass('-expanded')) {
+            $('.expand-button').html('<i class="fa fa-angle-double-up" aria-hidden="true"></i>');
+        } else {
+            $('.expand-button').html('<i class="fa fa-angle-double-down" aria-hidden="true"></i>');
+        }
+    });
+</script>
+<!-- view more function -->
+
+<!-- Forgot password hide/show -->
+<script>
+    $(document).ready(function () {
+        $('.pass_show').append('<span class="ptxt"><i class="fa fa-eye-slash"></i></span>');
+    });
+    
+    
+    $(document).on('click', '.pass_show .ptxt', function () {
+        
+        $(this).text($(this).text() == "Show" ? "Hide" : "Show");
+        
+        $(this).prev().attr('type', function (index, attr) { return attr == 'password' ? 'text' : 'password'; });
+        
+    });  
+</script>
+<!-- Forgot password hide/show -->
+
+
+<script>
+    if (/Mobi/.test(navigator.userAgent)) {
+        // if mobile device, use native pickers
+        $(".date input").attr("type", "date");
+        $(".time input").attr("type", "time");
+    } else {
+        // if desktop device, use DateTimePicker
+        $("#datepicker").datetimepicker({
+            useCurrent: false,
+            format: "L",
+            showTodayButton: true,
+            icons: {
+                next: "fa fa-chevron-right",
+                previous: "fa fa-chevron-left",
+                today: 'todayText',
+            }
+        });
+        $("#timepicker").datetimepicker({
+            format: "LT",
+            icons: {
+                up: "fa fa-chevron-up",
+                down: "fa fa-chevron-down"
+            }
+        });
+    }
+</script>
+
+</body>
+
+</html>

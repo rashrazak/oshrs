@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="55.925" height="38.925" viewBox="0 0 55.925 38.925">
+  <g id="Group_890" data-name="Group 890" transform="translate(-1018 -175)">
+    <g id="cash" transform="translate(1018 175)">
+      <path id="Path_1492" data-name="Path 1492" d="M64,128v4.909h36.818v14.727h4.909V128Z" transform="translate(-57.864 -126.773)" fill="#c6d9b0"/>
+      <path id="Path_1493" data-name="Path 1493" d="M184.109,240.218a4.909,4.909,0,1,1,4.909-4.909,4.909,4.909,0,0,1-4.909,4.909Z" transform="translate(-162.018 -219.355)" fill="#fedea1"/>
+      <path id="Path_1494" data-name="Path 1494" d="M12.8,198.836V179.2H54.527v19.636Zm20.863-14.727a4.909,4.909,0,1,0,4.909,4.909,4.909,4.909,0,0,0-4.909-4.909Z" transform="translate(-11.573 -173.064)" fill="#a0bf7c"/>
+      <g id="Group_889" data-name="Group 889">
+        <path id="Path_1495" data-name="Path 1495" d="M172.536,217.6a6.136,6.136,0,1,0,6.136,6.136,6.136,6.136,0,0,0-6.136-6.136Zm0,9.818a3.682,3.682,0,1,1,3.682-3.682A3.682,3.682,0,0,1,172.536,227.418Z" transform="translate(-150.446 -207.782)" fill="#573a32"/>
+        <circle id="Ellipse_488" data-name="Ellipse 488" cx="2.455" cy="2.455" r="2.455" transform="translate(31.909 13.5)" fill="#573a32"/>
+        <circle id="Ellipse_489" data-name="Ellipse 489" cx="2.455" cy="2.455" r="2.455" transform="translate(7.364 13.5)" fill="#573a32"/>
+        <path id="Path_1496" data-name="Path 1496" d="M4.909,115.2v4.909H0V142.2H44.181v-4.909H49.09V115.2Zm36.818,24.545H2.455V122.564H41.727Zm4.909-4.909H44.181V120.109H7.364v-2.455H46.636Z" transform="translate(0 -115.2)" fill="#573a32"/>
+      </g>
+    </g>
+    <path id="Path_1497" data-name="Path 1497" d="M0,9.337A9.337,9.337,0,1,0,9.337,0,9.337,9.337,0,0,0,0,9.337Z" transform="translate(1054.5 194.5)" fill="#ff877f" stroke="#573a32" stroke-width="1.5"/>
+    <path id="Path_1499" data-name="Path 1499" d="M308.542,320.042a.7.7,0,0,1-.992,0l-6.286-6.285a.708.708,0,1,1,1.01-.992l6.268,6.285a.7.7,0,0,1,0,.992Zm0-6.288-6.291,6.285a.7.7,0,1,1-.992-.992l6.285-6.285a.7.7,0,1,1,.992.992Z" transform="translate(758.624 -112.875)" fill="#573a32" stroke="#573a32" stroke-width="1"/>
+  </g>
+</svg>
