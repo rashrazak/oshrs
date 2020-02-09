@@ -13,6 +13,7 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/t&a.css" type="text/css">
+
     <!-- CSS -->
     
     <!-- font -->
@@ -293,9 +294,10 @@
                 
                 
                 <!-- TABLE GRID AFTER CLICK NO.OF RECORDS*****************Raj************************ -->
+
+                <!-- TABLE DRAFT -->
                 <div class="row mt-3">
                     <div class="col-lg-11 mx-auto">
-                        
                         <div class="row">
                             <div class="col-12">
                                 <div class="card">
@@ -303,26 +305,36 @@
                                         <table class="table table-hover">
                                             <thead>
                                                 <tr>
-                                                    <th>Leave Type</th>
-                                                    <th>Start</th>
-                                                    <th>End</th>
-                                                    <th>Duration</th>
-                                                    <th>Remarks</th>
-                                                    <th>attachment</th>
-                                                    <th>Status</th>
+                                                    <th>Date</th>
+                                                    <th>Shift</th>
+                                                    <th>Clock In</th>
+                                                    <th>Clock Out</th>
+                                                    <th>Total Hours</th>
+                                                    <th>Working Hours</th>
+                                                    <th>Regularization</th>
                                                     <th>Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>Annual Leave</td>
                                                     <td>13 Jan 20</td>
-                                                    <td>17 Jan 20</td>
-                                                    <td>5 Days</td>
-                                                    <td>Vacation</td>
-                                                    <td class="text-center"><img src="svg/attached.svg"></td>
-                                                    <td><span class="badge bg-warning">Pending</span></td>
-                                                    <td><button class="btn btn-danger table-btn">Withdraw</button></td>
+                                                    <td>Morning <br> 9am - 6pm</td>
+                                                    <td><input type="text" class="form-control form-clock" id=""></td>
+                                                    <td><input type="text" class="form-control form-clock" id=""></td>
+                                                    <td>9 Hours</td>
+                                                    <td></td>
+                                                    <td>
+                                                        <select class="form-control form-select" id="exampleFormControlSelect1">
+                                                            <option>Work from home</option>
+                                                            <option>Business Trip</option>
+                                                            <option>Client Meeting</option>
+                                                            <option>Internal Meeting</option>
+                                                         </select>
+                                                    </td>
+                                                    <td class="btn_action">
+                                                        <button class="btn btn-save-table table-btn">1</button>
+                                                        <button class="btn btn-edit-table table-btn">1</button>
+                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -331,10 +343,112 @@
                                 </div>
                                 <!-- /.card -->
                             </div>
-                        </div>
-                        
+                        </div> 
                     </div>
                 </div>
+                <!-- END TABLE DRAFT -->
+
+                <!-- TABLE PENDING APPROVAL-->
+                <div class="row mt-3">
+                    <div class="col-lg-11 mx-auto">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body table-responsive p-0">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>Date</th>
+                                                    <th>Shift</th>
+                                                    <th>Clock In</th>
+                                                    <th>Clock Out</th>
+                                                    <th>Total Hours</th>
+                                                    <th>Working Hours</th>
+                                                    <th>Regularization</th>
+                                                    <th>Remarks</th>
+                                                    <th>Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>13 Jan 20</td>
+                                                    <td>Morning <br> 9am - 6pm</td>
+                                                    <td>08.45</td>
+                                                    <td>18.20</td>
+                                                    <td>9 Hours</td>
+                                                    <td>9.35 Hours</td>
+                                                    <td>Client Meeting</td>
+                                                    <td>OSHRS</td>
+                                                    <td><span class="pending-approved"></span>Pending</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- /.card-body -->
+                                </div>
+                                <!-- /.card -->
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <!-- END TABLE PENDING APPROVAL-->
+
+                <!-- TABLE APPROVED-->
+                <div class="row mt-3">
+                    <div class="col-lg-11 mx-auto">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body table-responsive p-0">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>Date</th>
+                                                    <th>Shift</th>
+                                                    <th>Clock In</th>
+                                                    <th>Clock Out</th>
+                                                    <th>Total Hours</th>
+                                                    <th>Working Hours</th>
+                                                    <th>Regularization</th>
+                                                    <th>Remarks</th>
+                                                    <th>Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>13 Jan 20</td>
+                                                    <td>Morning <br> 9am - 6pm</td>
+                                                    <td>08.45</td>
+                                                    <td>18.20</td>
+                                                    <td>9 Hours</td>
+                                                    <td>9.35 Hours</td>
+                                                    <td>Client Meeting</td>
+                                                    <td>OSHRS</td>
+                                                    <td> <span class="status-approved"></span>Approved</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- /.card-body -->
+                                </div>
+                                <!-- /.card -->
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <!-- END TABLE APPROVED-->
+
+                <!-- TABLE APPROVAL PANEL-->
+
+                <!-- END TABLE APPROVAL PANEL-->
+
+                <!-- TABLE HISTORY-->
+
+                <!-- END TABLE HISTORY-->
+
+
+
+
                 <!-- TABLE GRID AFTER CLICK NO.OF RECORDS*****************Raj************************ -->
             </main>
             
