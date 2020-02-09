@@ -270,17 +270,17 @@
                             <div class="col-md-3 colum-inner-content">
                                 <img src="svg/leave-pending.svg" title="Leave Pending Approvals">
                                 <p>Draft</p>
-                                <a href="#" class="btn btn-sm animated-button thar-four">2 Records</a>
+                                <a href="javascript:void(0);" class="btn btn-sm animated-button thar-four btnTableDraft">2 Records</a>
                             </div>
                             <div class="col-md-3 colum-inner-content">
                                 <img src="svg/upcomin-leave.svg" title="Upcoming Leaves">
                                 <p>Pending Approval</p>
-                                <a href="#" class="btn btn-sm animated-button thar-four">2 Records</a>
+                                <a href="javascript:void(0);" class="btn btn-sm animated-button thar-four btnTablePendingApproval">2 Records</a>
                             </div>
                             <div class="col-md-3 colum-inner-content">
                                 <img src="svg/approve-panel.svg" title="Approval Panel">
                                 <p>Approved</p>
-                                <a href="#" class="btn btn-sm animated-button thar-four">Approval Panel</a>
+                                <a href="javascript:void(0);" class="btn btn-sm animated-button thar-four btnTableApproved">Approval Panel</a>
                             </div>
                             <div class="col-md-3 colum-inner-content">
                                 <img src="svg/leave-history.svg" title="Leave History">
@@ -296,7 +296,7 @@
                 <!-- TABLE GRID AFTER CLICK NO.OF RECORDS*****************Raj************************ -->
 
                 <!-- TABLE DRAFT -->
-                <div class="row mt-3">
+                <div class="row mt-3 tableDraft display-none">
                     <div class="col-lg-11 mx-auto">
                         <div class="row">
                             <div class="col-12">
@@ -349,7 +349,7 @@
                 <!-- END TABLE DRAFT -->
 
                 <!-- TABLE PENDING APPROVAL-->
-                <div class="row mt-3">
+                <div class="row mt-3 tablePendingApproval display-none">
                     <div class="col-lg-11 mx-auto">
                         <div class="row">
                             <div class="col-12">
@@ -394,7 +394,7 @@
                 <!-- END TABLE PENDING APPROVAL-->
 
                 <!-- TABLE APPROVED-->
-                <div class="row mt-3">
+                <div class="row mt-3 tableApproved display-none">
                     <div class="col-lg-11 mx-auto">
                         <div class="row">
                             <div class="col-12">
@@ -483,15 +483,8 @@
                     <a class="dashboard-btn payslip">
                         <p>Payslip <img src="svg/file (7).svg"></p>
                     </a>
-                    
-                </div>
-                
-                
-                
-            </div>
-            
-            
-            
+                </div>                
+            </div> 
         </div>
     </div>
 </section>
@@ -506,83 +499,81 @@
 
 
 <!-- Modal for Change password -->
-<div class="modal animate modal-custom-style" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-aria-hidden="true" data-backdrop="true">
-<div class="modal-dialog" role="document">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h6 class="modal-title" id="exampleModalLabel">Change Password</h6>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true"><i class="fa fa-times-circle"></i></span>
-            </button>
-        </div>
-        <div class="modal-body p-lg">
-            <div class="row">
-                <div class="col-md-12 custom-input-fields">
-                    
-                    <label>Current Password</label>
-                    <div class="form-group pass_show">
-                        <input type="password" value="raj123!@#" class="form-control"
-                        placeholder="Current Password">
+<div class="modal animate modal-custom-style" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6 class="modal-title" id="exampleModalLabel">Change Password</h6>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fa fa-times-circle"></i></span>
+                </button>
+            </div>
+            <div class="modal-body p-lg">
+                <div class="row">
+                    <div class="col-md-12 custom-input-fields">
+                        
+                        <label>Current Password</label>
+                        <div class="form-group pass_show">
+                            <input type="password" value="raj123!@#" class="form-control"
+                            placeholder="Current Password">
+                        </div>
+                        <label>New Password</label>
+                        <div class="form-group pass_show">
+                            <input type="password" value="ajith123!@#" class="form-control"
+                            placeholder="New Password">
+                        </div>
+                        <label>Confirm Password</label>
+                        <div class="form-group pass_show">
+                            <input type="password" value="ajith123!@#" class="form-control"
+                            placeholder="Confirm Password">
+                        </div>
+                        
                     </div>
-                    <label>New Password</label>
-                    <div class="form-group pass_show">
-                        <input type="password" value="ajith123!@#" class="form-control"
-                        placeholder="New Password">
-                    </div>
-                    <label>Confirm Password</label>
-                    <div class="form-group pass_show">
-                        <input type="password" value="ajith123!@#" class="form-control"
-                        placeholder="Confirm Password">
-                    </div>
-                    
                 </div>
             </div>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-primary custom-btn-modal">Change Password</button>
-            <button type="button" class="btn btn-secondary custom-btn-modal secondary"
-            data-dismiss="modal">Cancel</button>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary custom-btn-modal">Change Password</button>
+                <button type="button" class="btn btn-secondary custom-btn-modal secondary"
+                data-dismiss="modal">Cancel</button>
+            </div>
         </div>
     </div>
-</div>
 </div>
 <!-- Modal for Change password -->
 
 <!-- ************************************************************************************************ -->
 
 <!-- Modal for Edit profile Pic -->
-<div class="modal fade animate modal-custom-style" id="exampleModal" tabindex="-1" role="dialog"
-aria-labelledby="exampleModalLabel" aria-hidden="true">
-<div class="modal-dialog" role="document">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h6 class="modal-title" id="exampleModalLabel">Change Profile Picture</h6>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true"><i class="fa fa-times-circle"></i></span>
-            </button>
-        </div>
-        <div class="modal-body">
-            <div class="avatar-upload">
-                <div class="avatar-edit">
-                    <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
-                    <label for="imageUpload"></label>
-                </div>
-                <div class="avatar-preview">
-                    <div id="imagePreview" style="background-image: url(http://i.pravatar.cc/500?img=7);">
+<div class="modal fade animate modal-custom-style" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6 class="modal-title" id="exampleModalLabel">Change Profile Picture</h6>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fa fa-times-circle"></i></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="avatar-upload">
+                    <div class="avatar-edit">
+                        <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                        <label for="imageUpload"></label>
                     </div>
+                    <div class="avatar-preview">
+                        <div id="imagePreview" style="background-image: url(http://i.pravatar.cc/500?img=7);">
+                        </div>
+                    </div>
+                    <h6 class="text-center mt-2 mb-0">Ajith</h6>
                 </div>
-                <h6 class="text-center mt-2 mb-0">Ajith</h6>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary custom-btn-modal"
+                style="min-width: 100px;">Save</button>
+                <button type="button" class="btn btn-secondary custom-btn-modal secondary"
+                data-dismiss="modal">Cancel</button>
             </div>
         </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-primary custom-btn-modal"
-            style="min-width: 100px;">Save</button>
-            <button type="button" class="btn btn-secondary custom-btn-modal secondary"
-            data-dismiss="modal">Cancel</button>
-        </div>
     </div>
-</div>
 </div>
 <!-- Modal for Edit profile Pic -->
 
@@ -644,7 +635,6 @@ crossorigin="anonymous"></script>
 </script>
 <!-- Forgot password hide/show -->
 
-
 <script>
     if (/Mobi/.test(navigator.userAgent)) {
         // if mobile device, use native pickers
@@ -671,6 +661,30 @@ crossorigin="anonymous"></script>
         });
     }
 </script>
+
+<!-- TALBE HIDE / SHOW -->
+<script>
+    $(document.body).on('click', '.btnTableDraft', function(){
+        $('.tableDraft').show();
+        $('.tablePendingApproval').hide();
+        $('.tableApproved').hide();
+    });
+
+    $(document.body).on('click', '.btnTablePendingApproval', function(){
+        $('.tableDraft').hide();
+        $('.tablePendingApproval').show();
+        $('.tableApproved').hide();
+    });
+
+    $(document.body).on('click', '.btnTableApproved', function(){
+        $('.tableDraft').hide();
+        $('.tablePendingApproval').hide();
+        $('.tableApproved').show();
+    });
+
+
+</script>
+
 
 </body>
 
