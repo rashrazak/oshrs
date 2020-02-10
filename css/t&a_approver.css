@@ -27,7 +27,7 @@
 .hours-cirlce > h4{
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 50%;
+    top: 55%;
     left: 50%;
     font-size: 24px;
     color: #0670B4;
@@ -118,4 +118,7 @@
 	-webkit-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
+}
+.form-control-select{
+    border-radius: 0 !important;
 }
