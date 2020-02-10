@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?q34vio');
+  src:  url('fonts/icomoon.eot?q34vio#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?q34vio') format('truetype'),
+    url('fonts/icomoon.woff?q34vio') format('woff'),
+    url('fonts/icomoon.svg?q34vio#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-draft:before {
+  content: "\e900";
+  color: #6e6e6e;
+}
+.icon-approval-panel:before {
+  content: "\e901";
+  color: #6e6e6e;
+}
+.icon-tna-history:before {
+  content: "\e902";
+  color: #6e6e6e;
+}
+.icon-approved:before {
+  content: "\e903";
+  color: #6e6e6e;
+}
+.icon-pending-approval:before {
+  content: "\e904";
+  color: #6e6e6e;
+}
+.icon-payslip:before {
+  content: "\e905";
+  color: #6e6e6e;
+}
+.icon-setting:before {
+  content: "\e906";
+  color: #6e6e6e;
+}
+.icon-profile:before {
+  content: "\e907";
+  color: #6e6e6e;
+}
+.icon-leave:before {
+  content: "\e908";
+  color: #6e6e6e;
+}
+.icon-dashboard:before {
+  content: "\e909";
+  color: #6e6e6e;
+}
+.icon-overtime:before {
+  content: "\e90a";
+  color: #6e6e6e;
+}
+.icon-expense:before {
+  content: "\e90b";
+  color: #6e6e6e;
+}
+.icon-call:before {
+  content: "\e90c";
+  color: #6e6e6e;
+}
+.icon-onlinechat:before {
+  content: "\e90d";
+  color: #6e6e6e;
+}
+.icon-email:before {
+  content: "\e90e";
+  color: #6e6e6e;
+}
+.icon-tna:before {
+  content: "\e90f";
+  color: #6e6e6e;
+}
+.icon-approval:before {
+  content: "\e910";
+  color: #6e6e6e;
+}
