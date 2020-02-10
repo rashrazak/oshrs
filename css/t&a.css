@@ -162,3 +162,14 @@
     font-weight: 900;
     width: 200px;
 }
+.status-icon-tna{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.status-icon-tna > div > p{
+    color: #8898AA;
+    font-size: 14px;
+    margin: 5px 0;
+    height: 30px;
+}

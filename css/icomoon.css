@@ -27,23 +27,28 @@
 
 .icon-draft:before {
   content: "\e900";
-  color: #6e6e6e;
+  color: #0670B4;
+  font-size: 4em;
 }
 .icon-approval-panel:before {
   content: "\e901";
-  color: #6e6e6e;
+  color: #51B72B;
+  font-size: 4em;
 }
 .icon-tna-history:before {
   content: "\e902";
-  color: #6e6e6e;
+  color: #E8AA35;
+  font-size: 4em;
 }
 .icon-approved:before {
   content: "\e903";
-  color: #6e6e6e;
+  color: #32B6A6;
+  font-size: 4em;
 }
 .icon-pending-approval:before {
   content: "\e904";
-  color: #6e6e6e;
+  color: #EAEA30;
+  font-size: 4em;
 }
 .icon-payslip:before {
   content: "\e905";
