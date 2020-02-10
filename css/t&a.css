@@ -22,11 +22,13 @@
 .ta-hours > h4{
     color: #0670B4;
     font-size: 28px;
+    font-weight: 900;
 }
 .ta-hours > h4 > span > p{
     color: #000000;
     font-size: 12px;
     margin: 0;
+    font-weight: normal;
 }
 .ta-special-text{
     text-align: left;
