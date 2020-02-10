@@ -145,7 +145,7 @@
             
             <main class="col-12 col-md-12 col-xl-12 bd-content" role="main">
                 <div class="leave-info">
-                    <h3>My T&A as of <span>4 Feb  2020</span> <img src="svg/datepik-main.svg"></h3>
+                    <h3>My T&A as of <span><input type="text" id="viewCalendar" class="form-transparent" value="4 Feb 2020" readonly/></span> <img class="openCalendar" src="svg/datepik-main.svg"></h3>
                 </div>
                 
                 <!-- carousel slider -->
@@ -682,8 +682,16 @@ crossorigin="anonymous"></script>
         $('.tablePendingApproval').hide();
         $('.tableApproved').show();
     });
+</script>
 
-
+<!-- CALENDAR VIEW -->
+<script>
+    $(document.body).on('click', '.openCalendar', function (){  
+        $('#viewCalendar').datetimepicker({
+            format: 'L',
+            useCurrent: false,
+            // minDate: minDateToday
+        });
 </script>
 
 
