@@ -114,3 +114,46 @@
 .table-payslip tbody tr:nth-of-type(even){
     background-color: #F7FAFC;
 }
+.select-range-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    margin: 30px 0;
+}
+.select-range-container > p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #2C2C2C;
+    width: 100%;
+    margin: 0;
+}
+.select-range-container > small{
+    font-size: 12px;
+    color: #000000;
+    font-weight: 100;
+    margin: 0 20px;
+}
+.form-date{
+    background-image: url(../img/payslip/ico-calendar.png);
+    background-repeat: no-repeat;
+    background-position: center right 10px;
+    width: 180px;
+    border-radius: 0;
+    cursor: pointer;
+}
+.btn-download-section{
+    text-align: center;
+    margin: 20px 0;
+}
+.btn-download{
+    background-color: #1D75AE;
+    border-radius: 0;
+    color: #FFF;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+.btn-download[disabled]{
+    background-color: #C1C1C1;
+    transition: all .3s;
+}
