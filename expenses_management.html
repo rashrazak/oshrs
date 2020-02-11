@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <title>Corazon 2.0 | Expense Dashboard</title>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    <!-- font -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/expense.css" type="text/css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- CSS -->
+    
+    <!-- font awsome icons -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="fontawsome/fontawesome-free/css/all.min.css">
+    <!-- font awsome icons -->
+</head>
+
+<body class="background-cover">
+    <!--********************************* NAVBAR *********************************-->
+    <nav class="navbar navbar-expand navbar-dark flex-column flex-md-row top-navbar-fixed">
+        <a class="navbar-brand logo-corazon" href="#"><img src="svg/logo.svg" title="Corazon 2.0"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto pl-4">
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><img src="svg/home.svg"> <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        <!-- profile dropdown & notification -->
+        <form class="form-inline my-2 my-lg-0">
+            
+        <!-- notifi -->
+        <button class="custom-btn mr-5">
+            <ul>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell" aria-hidden="true">
+                            <span class="badge badge-danger">07</span>
+                        </i></a>
+                        
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-left notification-dropdown">
+                            <span class="dropdown-item dropdown-header">
+                                <h6 class="m-0">07 Notifications</h6>
+                            </span>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-envelope mr-2"></i> 4 new messages
+                                <span class="float-right text-muted text-sm">3 mins</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-users mr-2"></i> 8 friend requests
+                                <span class="float-right text-muted text-sm">12 hours</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-file mr-2"></i> 3 new reports
+                                <span class="float-right text-muted text-sm">2 days</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+                        </div>
+                    </li>
+                </ul>
+            </button>
+            <!-- notifi -->
+                
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-4"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-list-4">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle toggle-icon" href="#" id="navbarDropdownMenuLink"
+                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="img/profile.png" width="40" height="40" class="rounded-circle"> Johny Vino
+                    </a>
+                    <div class="dropdown-menu profile-dropdown" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Account</a>
+                        
+                        <a class="dropdown-item" data-toggle="modal" data-target="#exampleModal"
+                        data-target=".animate" data-ui-class="a-zoom" href="#">Edit Profile</a>
+                        
+                        <a class="dropdown-item" data-toggle="modal" data-target=".animate"
+                        data-ui-class="a-zoom" href="#">Password Change</a>
+                        
+                        <a class="dropdown-item" href="#">Log Out</a>
+                    </div>
+                </form>
+                <!-- profile dropdown & notification -->
+            </div>
+        </nav>
+        <!--********************************* NAVBAR *********************************-->
+        
+        <!--*********************************Section 1*********************************-->
+    </section>
+    <div class="container-fluid">
+        <div class="row flex-xl-nowrap">
+            
+            <!-- left-side-menu -->
+            <div class="col-12 col-md-auto col-xl-auto p-0 bd-sidebar left-sidebar-fixed expense">
+                <div class="vertical-block-top">
+                    <ul>
+                        <li><img src="svg/expense.svg"></li>
+                    </ul>
+                </div>
+                <div class="vertical-block">
+                    <h6>Expense</h6>
+                </div>
+                <hr class="hr-line">
+                <div class="vertical-block-bottom">
+                    <ul>
+                        <li><a href="#"><img src="svg/approver.svg"></a></li>
+                        <li><a href="#"><img src="svg/hr-admin.svg"></a></li>
+                    </ul>
+                    <hr class="hr-line">
+                    <ul>
+                        <li><a href="#"><img src="svg/contact.svg"></a></li>
+                        <li><a href="#"><img src="svg/email.svg"></a></li>
+                        <li><a href="#"><img src="svg/settings.svg"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- left-side-menu -->
+            
+            
+            <main class="col-12 col-md-12 col-xl-12 bd-content viewMain" role="main">
+                <!-- <div class="leave-info">
+                    <h3>My T&A as of <span><input type="text" id="viewCalendar" class="form-transparent" value="4 Feb 2020" readonly/></span> <img class="openCalendar" src="svg/datepik-main.svg"></h3>
+                </div> -->
+                
+                <!-- carousel slider -->
+                <div class="row">
+                    <div class="col-lg-11 mx-auto">
+                        <div class="text-center my-3">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="row">
+                                    <div class="container flex-box">
+                                        <div class="">
+                                            <span class="icon-oval">
+                                                <span class="oval-big expense_value"><h4>$1,340</h4></span> 
+                                                <p>Draft</p>
+                                            </span>
+                                        </div>
+                                        <div class="">
+                                            <span class="icon-oval">
+                                                <span class="oval-big expense_value"><h4>$1,340</h4></span>
+                                                <p>Pending For Approval</p>
+                                            </span>
+                                        </div>
+                                        <div class="">
+                                            <span class="icon-oval">
+                                                <span class="oval-big expense_value"><h4>$1,340</h4></span>
+                                                <p>Approved</p>
+                                            </span>
+                                        </div>
+                                        <div class="">
+                                            <span class="icon-oval">
+                                                <span class="oval-big expense_value"><h4>$1,340</h4></span>
+                                                <p>Reimburse</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- carousel slider -->
+                
+                
+                <!-- accordian tab function -->
+                <div class="row">
+                    <div class="col-lg-11 mx-auto">
+                        <div class="special-text expense-special-text">
+                            <h4>Request Expense</h4>
+                            <!-- ta type -->
+                            <div class="container container-ta">
+                                <div class="row form-type">
+                                    <div class="col-md-3">
+                                        <div class="form-group expense-form-text">
+                                            <label for="exampleFormControlSelect1">Expense Title</label>
+                                            <input type="text" class="form-control form-text" id="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group expense-form-text">
+                                            <label for="exampleFormControlSelect1">Department Code</label>
+                                            <input type="text" class="form-control form-text" id="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group expense-form-text">
+                                            <label for="exampleFormControlSelect1">Total Claim Amount</label>
+                                            <input type="text" class="form-control form-text" style="width: 50%;" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="$00:0000">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button type="button" class="btn btn-save"><img src="/img/expense/save.png"/>  SAVE</button>
+                                        <button type="button" class="btn btn-submit"><img src="/img/expense/submit.png"/>SUBMIT</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- <hr class="mt-2 mb-2"> -->
+                            
+                            <!-- Hidden Content -->
+                            <div class="container">
+                                <div class="row pb-3">
+                                    <div class="container-table">
+                                        <table>
+                                            <thead>
+                                                <th>Punch In</th>
+                                                <th>Punch Out</th>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><input type="time" class="form-control form-text-2" id=""></td>
+                                                    <td><input type="time" class="form-control form-text-2" id=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="time" class="form-control form-text-2" id=""></td>
+                                                    <td><input type="time" class="form-control form-text-2" id=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="time" class="form-control form-text-2" id=""></td>
+                                                    <td><input type="time" class="form-control form-text-2" id=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="time" class="form-control form-text-2" id=""></td>
+                                                    <td><input type="time" class="form-control form-text-2" id=""></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            
+                            <!-- Hidden Content -->
+                            
+                        </div>
+                        <!--leave type -->
+                        
+                    </div>
+                    <button class="expand-button expand-button-expense">
+                        Add Expense <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <!-- accordian tab function -->
+                
+                
+                <!-- leave status today -->
+                <div class="row">
+                    <div class="col-lg-9 mx-auto text-center leave-status">
+                        <h4>My Expense Status as of <span id="dateTimeToday" class="date-time-today"></span></h4>
+                            <!-- <h4>My T&A as of <span></span> <img class="openCalendar" src="svg/datepik-main.svg"></h4> -->
+                        <div class="row status-icon-tna">
+                            <div class="">
+                                <!-- <img src="svg/leave-pending.svg" title="Leave Pending Approvals"> -->
+                                <i class="icon-draft"></i>
+                                <p>Draft</p>
+                                <a href="javascript:void(0);" class="btn btn-sm animated-button thar-four btnTableDraft">2 Records</a>
+                            </div>
+                            <div class="">
+                                <i class="icon-pending-approval"></i>
+                                <p>Pending Approval</p>
+                                <a href="javascript:void(0);" class="btn btn-sm animated-button thar-four btnTablePendingApproval">2 Records</a>
+                            </div>
+                            <div class="">
+                                <i class="icon-approved"></i>
+                                <p>Approved</p>
+                                <a href="javascript:void(0);" class="btn btn-sm animated-button thar-four btnTableApproved">2 Records</a>
+                            </div>
+                            <div class="">
+                                <img src="/img/expense/reimburse.png">
+                                <p>Reimburse</p>
+                                <a href="javascript:void(0);" class="btn btn-sm animated-button thar-four btnAddApproval">Approval Panel</a>
+                            </div>
+                            <div class="">
+                                <i class="icon-approval-panel"></i>
+                                <p></p>
+                                <a href="javascript:void(0);" class="btn btn-sm animated-button thar-four btnAddApproval">Approval Panel</a>
+                            </div>
+                            
+                            <div class="">
+                                <i class="icon-tna-history"></i>
+                                <p></p>
+                                <a href="javascript:void(0);" class="btn btn-sm animated-button thar-four">T&A History</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- leave status today -->
+                
+                
+                <!-- TABLE GRID AFTER CLICK NO.OF RECORDS*****************Raj************************ -->
+
+                    <!-- TABLE DRAFT -->
+                    <div class="row mt-3 tableDraft display-none">
+                        <div class="col-lg-11 mx-auto">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-body table-responsive p-0">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Submitted on</th>
+                                                        <th>Claim No</th>
+                                                        <th>Expense Title</th>
+                                                        <th>Submitted Amount</th>
+                                                        <th>Approved Amount</th>
+                                                        <th>Remark</th>
+                                                        <th>Status</th>
+                                                        <th>View</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>13 Jan 20</td>
+                                                        <td>1490</td>
+                                                        <td>Bangalore Trip</td>
+                                                        <td>$1,560</td>
+                                                        <td>$1,257</td>
+                                                        <td>NA</td>
+                                                        <td><span class="status-update"></span>Update</td>
+                                                        <td class="btn_action">
+                                                            <button class="btn btn-view-table table-btn"><i class="fa fa-eye"></i></button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- /.card-body -->
+                                    </div>
+                                    <!-- /.card -->
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <!-- END TABLE DRAFT -->
+
+                    <!-- TABLE PENDING APPROVAL-->
+                    <div class="row mt-3 tablePendingApproval display-none">
+                        <div class="col-lg-11 mx-auto">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-body table-responsive p-0">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Submitted on</th>
+                                                        <th>Claim No</th>
+                                                        <th>Expense Title</th>
+                                                        <th>Submitted Amount</th>
+                                                        <th>Approved Amount</th>
+                                                        <th>Remark</th>
+                                                        <th>Status</th>
+                                                        <th>View</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>13 Jan 20</td>
+                                                        <td>1490</td>
+                                                        <td>Bangalore Trip</td>
+                                                        <td>$1,560</td>
+                                                        <td>$1,257</td>
+                                                        <td>NA</td>
+                                                        <td><span class="pending-approved"></span>Pending</td>
+                                                        <td class="btn_action">
+                                                            <button class="btn btn-view-table table-btn downloadApproval"><img src="/img/expense/download.png" /></button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- /.card-body -->
+                                    </div>
+                                    <!-- /.card -->
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <!-- END TABLE PENDING APPROVAL-->
+
+                    <!-- TABLE APPROVED-->
+                    <div class="row mt-3 tableApproved display-none">
+                        <div class="col-lg-11 mx-auto">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-body table-responsive p-0">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Submitted on</th>
+                                                        <th>Claim No</th>
+                                                        <th>Expense Title</th>
+                                                        <th>Submitted Amount</th>
+                                                        <th>Approved Amount</th>
+                                                        <th>Remark</th>
+                                                        <th>Status</th>
+                                                        <th>View</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>13 Jan 20</td>
+                                                        <td>1490</td>
+                                                        <td>Bangalore Trip</td>
+                                                        <td>$1,560</td>
+                                                        <td>$1,257</td>
+                                                        <td>NA</td>
+                                                        <td><span class="status-approved"></span>Approved</td>
+                                                        <td class="btn_action">
+                                                            <button class="btn btn-view-table table-btn downloadApproval"><img src="/img/expense/download.png" /></button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- /.card-body -->
+                                    </div>
+                                    <!-- /.card -->
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                <!-- END TABLE APPROVED-->
+
+                <!-- TABLE APPROVAL PANEL-->
+
+                <!-- END TABLE APPROVAL PANEL-->
+
+                <!-- TABLE HISTORY-->
+
+                <!-- END TABLE HISTORY-->
+
+                <!-- DOWNLOAD ALERT -->
+                <div class="alert alert-dismissible fade view-download-alert downloadAlert" role="alert">
+                    Document was downloaded
+                    <button type="button" class="close close-download" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">X CLOSE</span>
+                    </button>
+                  </div>
+
+                <!-- TABLE GRID AFTER CLICK NO.OF RECORDS*****************Raj************************ -->
+            </main>
+            <!-- EXPENSE PENDING -->
+            
+            <div class="d-xl-block col-md-auto col-xl-auto p-0 right-sidebar-fixed">
+                <div class="tab-button-list">
+                    
+                    <a class="dashboard-btn active">
+                        <p> Leave <img src="svg/leave-dark.svg"></p>
+                    </a>
+                    
+                    <a class="dashboard-btn dashboard">
+                        <p>Dashboard <img src="svg/dashboard-white.svg"></p>
+                    </a>
+                    
+                    <a class="dashboard-btn profile">
+                        <p>Profile <img src="svg/profile.svg"></p>
+                    </a>
+                    
+                    <a class="dashboard-btn expense">
+                        <p>Expense <img src="svg/expense.svg"></p>
+                    </a>
+                    
+                    <a class="dashboard-btn ta">
+                        <p>T&A <img src="svg/ta.svg"></p>
+                    </a>
+                    
+                    <a class="dashboard-btn overtime">
+                        <p>Overtime <img src="svg/overtime.svg"></p>
+                    </a>
+                    
+                    <a class="dashboard-btn payslip">
+                        <p>Payslip <img src="svg/file (7).svg"></p>
+                    </a>
+                </div>                
+            </div> 
+        </div>
+    </div>
+</section>
+<!--*********************************Section 1*********************************-->
+
+<footer class="footer fixed-bottom-footer">
+    <div class="container">
+        <p class="footer-text m-0">Copyright ©2020 Corazon 2.0.0 | Powered by <span><a href="#">OSHRS</a></span></p>
+    </div>
+</footer>
+
+
+
+<!-- Modal for Change password -->
+<div class="modal animate modal-custom-style" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6 class="modal-title" id="exampleModalLabel">Change Password</h6>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fa fa-times-circle"></i></span>
+                </button>
+            </div>
+            <div class="modal-body p-lg">
+                <div class="row">
+                    <div class="col-md-12 custom-input-fields">
+                        
+                        <label>Current Password</label>
+                        <div class="form-group pass_show">
+                            <input type="password" value="raj123!@#" class="form-control"
+                            placeholder="Current Password">
+                        </div>
+                        <label>New Password</label>
+                        <div class="form-group pass_show">
+                            <input type="password" value="ajith123!@#" class="form-control"
+                            placeholder="New Password">
+                        </div>
+                        <label>Confirm Password</label>
+                        <div class="form-group pass_show">
+                            <input type="password" value="ajith123!@#" class="form-control"
+                            placeholder="Confirm Password">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary custom-btn-modal">Change Password</button>
+                <button type="button" class="btn btn-secondary custom-btn-modal secondary"
+                data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal for Change password -->
+
+<!-- ************************************************************************************************ -->
+
+<!-- Modal for Edit profile Pic -->
+<div class="modal fade animate modal-custom-style" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6 class="modal-title" id="exampleModalLabel">Change Profile Picture</h6>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fa fa-times-circle"></i></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="avatar-upload">
+                    <div class="avatar-edit">
+                        <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                        <label for="imageUpload"></label>
+                    </div>
+                    <div class="avatar-preview">
+                        <div id="imagePreview" style="background-image: url(http://i.pravatar.cc/500?img=7);">
+                        </div>
+                    </div>
+                    <h6 class="text-center mt-2 mb-0">Ajith</h6>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary custom-btn-modal"
+                style="min-width: 100px;">Save</button>
+                <button type="button" class="btn btn-secondary custom-btn-modal secondary"
+                data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal for Edit profile Pic -->
+
+<!-- SCRIPT -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+crossorigin="anonymous"></script>
+<!-- SCRIPT -->
+
+
+<!-- MODAL ANIMATION SCRIPT -->
+<script>
+    $(function () {
+        $('[role=dialog]')
+        .on('show.bs.modal', function (e) {
+            $(this)
+            .find('[role=document]')
+            .removeClass()
+            .addClass('modal-dialog ' + $(e.relatedTarget).data('ui-class'))
+        })
+    })
+</script>
+<!-- MODAL ANIMATION SCRIPT -->
+
+<!-- view more function -->
+<script>
+    $('.expand-button').on('click', function () {
+        $('.special-text').toggleClass('-expanded');
+        
+        if ($('.special-text').hasClass('-expanded')) {
+            $('.expand-button.expand-button-expense').html('<i class="fa fa-angle-double-up" aria-hidden="true"></i>');
+        } else {
+            $('.expand-button.expand-button-expense').html('Add Expense <i class="fa fa-angle-double-right" aria-hidden="true"></i>');
+        }
+    });
+</script>
+<!-- view more function -->
+
+<!-- Forgot password hide/show -->
+<script>
+    $(document).ready(function () {
+        $('.pass_show').append('<span class="ptxt"><i class="fa fa-eye-slash"></i></span>');
+    });
+    
+    
+    $(document).on('click', '.pass_show .ptxt', function () {
+        
+        $(this).text($(this).text() == "Show" ? "Hide" : "Show");
+        
+        $(this).prev().attr('type', function (index, attr) { return attr == 'password' ? 'text' : 'password'; });
+        
+    });  
+</script>
+<!-- Forgot password hide/show -->
+
+<script>
+    if (/Mobi/.test(navigator.userAgent)) {
+        // if mobile device, use native pickers
+        $(".date input").attr("type", "date");
+        $(".time input").attr("type", "time");
+    } else {
+        // if desktop device, use DateTimePicker
+        // $("#datepicker").datetimepicker({
+        //     useCurrent: false,
+        //     format: "L",
+        //     showTodayButton: true,
+        //     icons: {
+        //         next: "fa fa-chevron-right",
+        //         previous: "fa fa-chevron-left",
+        //         today: 'todayText',
+        //     }
+        // });
+        // $("#timepicker").datetimepicker({
+        //     format: "LT",
+        //     icons: {
+        //         up: "fa fa-chevron-up",
+        //         down: "fa fa-chevron-down"
+        //     }
+        // });
+    }
+</script>
+
+<!-- TALBE HIDE / SHOW -->
+<script>
+    $(document.body).on('click', '.btnTableDraft', function(){
+        $('.animated-button.thar-four').removeClass('activeBtn');
+        $('.tableDraft').show();
+        $('.tablePendingApproval').hide();
+        $('.tableApproved').hide();
+        $(this).addClass('activeBtn');
+    });
+
+    $(document.body).on('click', '.btnTablePendingApproval', function(){
+        $('.animated-button.thar-four').removeClass('activeBtn');
+        $('.tableDraft').hide();
+        $('.tablePendingApproval').show();
+        $('.tableApproved').hide();
+        $(this).addClass('activeBtn');
+
+    });
+
+    $(document.body).on('click', '.btnTableApproved', function(){
+        $('.animated-button.thar-four').removeClass('activeBtn');
+        $('.tableDraft').hide();
+        $('.tablePendingApproval').hide();
+        $('.tableApproved').show();
+        $(this).addClass('activeBtn');
+
+    });
+    //go to approver page
+    $(document.body).on('click', '.btnAddApproval', function(){
+        window.location.href = 'expenses_approver.html'
+    });
+
+    $(document.body).on('click', '.downloadApproval', function(){
+        $('.downloadAlert').addClass('show')
+    });
+</script>
+<script>
+    const date = new Date();
+    const formattedDate = date.toLocaleDateString('en-GB', {day: '2-digit', month: 'short', year: 'numeric'}).replace(/ /g, ' ');
+    $('#dateTimeToday').html(`${formattedDate} <i class="far fa-calendar-alt" aria-hidden="true"><input type="text" id="viewCalendar" class="display-none" value="" readonly/>`)
+</script>
+
+<!-- CALENDAR VIEW -->
+<script>
+    $(document.body).on('click', '#dateTimeToday', function (){  
+        $('#viewCalendar').datetimepicker({
+            format: 'L',
+            useCurrent: false,
+            // minDate: minDateToday
+        });
+    })
+</script>
+<script>
+        
+    $("input[data-type='currency']").on({
+        keyup: function() {
+        formatCurrency($(this));
+        },
+        blur: function() { 
+        formatCurrency($(this), "blur");
+        }
+    });
+
+
+    function formatNumber(n) {
+        // format number 1000000 to 1,234,567
+        return n.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+    }
+
+
+    function formatCurrency(input, blur) {
+        // appends $ to value, validates decimal side
+        // and puts cursor back in right position.
+        
+        // get input value
+        var input_val = input.val();
+        
+        // don't validate empty input
+        if (input_val === "") { return; }
+        
+        // original length
+        var original_len = input_val.length;
+
+        // initial caret position 
+        var caret_pos = input.prop("selectionStart");
+            
+        // check for decimal
+        if (input_val.indexOf(".") >= 0) {
+
+            // get position of first decimal
+            // this prevents multiple decimals from
+            // being entered
+            var decimal_pos = input_val.indexOf(".");
+
+            // split number by decimal point
+            var left_side = input_val.substring(0, decimal_pos);
+            var right_side = input_val.substring(decimal_pos);
+
+            // add commas to left side of number
+            left_side = formatNumber(left_side);
+
+            // validate right side
+            right_side = formatNumber(right_side);
+            
+            // On blur make sure 2 numbers after decimal
+            if (blur === "blur") {
+            right_side += "00";
+            }
+            
+            // Limit decimal to only 2 digits
+            right_side = right_side.substring(0, 2);
+
+            // join number by .
+            input_val = "$" + left_side + "." + right_side;
+
+        } else {
+            // no decimal entered
+            // add commas to number
+            // remove all non-digits
+            input_val = formatNumber(input_val);
+            input_val = "$" + input_val;
+            
+            // final formatting
+            if (blur === "blur") {
+            input_val += ".00";
+            }
+        }
+        
+        // send updated string to input
+        input.val(input_val);
+
+        // put caret back in the right position
+        var updated_len = input_val.length;
+        caret_pos = updated_len - original_len + caret_pos;
+        input[0].setSelectionRange(caret_pos, caret_pos);
+    }
+
+</script>
+
+
+
+</body>
+
+</html>

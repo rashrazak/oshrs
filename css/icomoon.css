@@ -52,7 +52,8 @@
 }
 .icon-payslip:before {
   content: "\e905";
-  color: #6e6e6e;
+  color: #F57171;
+  font-size: 4em;
 }
 .icon-setting:before {
   content: "\e906";

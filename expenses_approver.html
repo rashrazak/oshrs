@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<title>Corazon 2.0 | Expense Approval</title>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/expense_approver.css" type="text/css">
+	<!-- CSS -->
+	
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+	<!-- font -->
+	
+	<!-- font awsome icons -->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="fontawsome/fontawesome-free/css/all.min.css">
+	<!-- font awsome icons -->
+</head>
+<body class="tna-approver-bg">
+	<!--********************************* NAVBAR *********************************-->
+	<nav class="navbar navbar-expand navbar-dark flex-column flex-md-row top-navbar-fixed">
+		<a class="navbar-brand logo-corazon" href="#"><img src="svg/logo.svg" title="Corazon 2.0"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto pl-4">
+				<li class="nav-item active">
+					<a class="nav-link" href="#"><img src="svg/home.svg"> <span class="sr-only">(current)</span></a>
+				</li>
+			</ul>
+			<!-- profile dropdown & notification -->
+			<form class="form-inline my-2 my-lg-0">
+				
+				<!-- notifi -->
+				<button class="custom-btn mr-5">
+					<ul>
+						<li class="nav-item dropdown">
+							<a class="nav-link" data-toggle="dropdown" href="#">
+								<i class="fa fa-bell" aria-hidden="true">
+									<span class="badge badge-danger">07</span>
+								</i></a>
+								
+								<div class="dropdown-menu dropdown-menu-lg dropdown-menu-left notification-dropdown">
+									<span class="dropdown-item dropdown-header"><h6 class="m-0">07 Notifications</h6></span>
+									<div class="dropdown-divider"></div>
+									<a href="#" class="dropdown-item">
+										<i class="fas fa-envelope mr-2"></i> 4 new messages
+										<span class="float-right text-muted text-sm">3 mins</span>
+									</a>
+									<div class="dropdown-divider"></div>
+									<a href="#" class="dropdown-item">
+										<i class="fas fa-users mr-2"></i> 8 friend requests
+										<span class="float-right text-muted text-sm">12 hours</span>
+									</a>
+									<div class="dropdown-divider"></div>
+									<a href="#" class="dropdown-item">
+										<i class="fas fa-file mr-2"></i> 3 new reports
+										<span class="float-right text-muted text-sm">2 days</span>
+									</a>
+									<div class="dropdown-divider"></div>
+									<a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+								</div>
+							</li>
+						</ul>
+					</button>
+					<!-- notifi -->
+					
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-4" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbar-list-4">
+						<ul class="navbar-nav">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle toggle-icon" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<img src="img/profile.png" width="40" height="40" class="rounded-circle"> Johny Vino
+								</a>
+								
+								<div class="dropdown-menu profile-dropdown" aria-labelledby="navbarDropdownMenuLink">
+									<a class="dropdown-item" href="#">Account</a>
+									
+									<a class="dropdown-item" data-toggle="modal" data-target="#exampleModal" data-target=".animate" data-ui-class="a-zoom" href="#">Edit Profile</a>
+									
+									<a class="dropdown-item" data-toggle="modal" data-target=".animate" data-ui-class="a-zoom" href="#">Password Change</a>
+									
+									<a class="dropdown-item" href="#">Log Out</a>
+								</div>
+							</form>
+							<!-- profile dropdown & notification -->
+						</div>
+					</nav>
+					<!--********************************* NAVBAR *********************************-->
+					
+					<!--*********************************Section 1*********************************-->
+					
+					<div class="container-fluid">
+						<div class="row flex-xl-nowrap">
+							<!-- left-side-menu -->
+							<div class="col-12 col-md-auto col-xl-auto p-0 bd-sidebar left-sidebar-fixed expense">
+								<div class="vertical-block-top">
+									<ul>
+										<li><img src="svg/expense.svg"></li>
+									</ul>
+								</div>
+								<div class="vertical-block">
+									<h6>Expense</h6>
+								</div>
+								<hr class="hr-line">
+								
+								
+								<div class="vertical-block-bottom">
+									<ul>
+										<li><a href="#"><img src="svg/approver.svg"></a></li>
+										<li><a href="#"><img src="svg/hr-admin.svg"></a></li>
+									</ul>
+									<hr class="hr-line">
+									<ul>
+										<li><a href="#"><img src="svg/contact.svg"></a></li>
+										<li><a href="#"><img src="svg/email.svg"></a></li>
+										<li><a href="#"><img src="svg/settings.svg"></a></li>
+										
+									</ul>
+								</div>
+								
+							</div>
+							<!-- left-side-menu -->
+							
+							
+							<main class="col-12 col-md-12 col-xl-12 bd-content" role="main">
+								<!-- <div class="scrollbar" id="style-15">
+									<div class="force-overflow"></div>
+								</div> -->
+								<div class="background-overlay col-lg-10 mx-auto scrollbar" id="style-15">
+									<div class="col-lg-10 mx-auto force-overflow">
+										<div class="row mt-3"> 
+											
+											<div class="col-md-4 left-title">
+												<h3>Expense Pending Approval</h3>
+											</div>
+											
+											<div class="col-md-8">
+												<div class="form-group leavetype-group">
+													<label for="exampleFormControlSelect1">Employees</label>
+													<select class="form-control form-control-select" id="exampleFormControlSelect1">
+														<option>All Employees</option>
+														<option>Bhathi</option>
+														<option>Manju nath</option>
+														<option>Ajith</option>
+														<option>Sreedhar</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										
+										
+										<div class="row">
+											<div class="col-md-12">
+												<div class="checkbox">
+													<label class="select-all">
+														<input type="checkbox" class="check" id="checkAll"> Select All
+													</label>
+												</div>
+											</div>
+										</div>
+										
+										<!-- BUTTONS APPROVE & REJECT -->
+										<div class="button-fixed">
+											<button type="button" class="btn btn-common btn-approve"><img src="svg/approve-btn.svg"> Approve</button>
+											<button type="button" class="btn btn-common btn-reject ml-3"><img src="svg/reject-btn.svg"> Reject</button>
+										</div>
+										<!-- BUTTONS APPROVE & REJECT -->
+										
+										
+										
+										
+										<!-- CARD TABS -->
+										<div class="card tab-card select">
+											<div class="row card-list">
+												
+												<!-- CHECKBOX & ICON -->
+												<div class="col-md-3 tab-col-1">
+													<span class="checkbox">
+														<label>
+															<input type="checkbox" class="check">
+														</label>
+													</span>
+													<span class="cost-circle"><h4>$1,340</h4></span>
+												</div>
+												<!-- CHECKBOX & ICON -->
+												
+												<!-- Leave Info -->
+												<div class="col-md-7 tab-col-2">
+													<h4 class="subject-line">India Trip</h4>
+													<p class="name-line mb-1 mt-1">John Miachel - JM001</p>
+													<p class="user-info">IT001</p>
+												</div>
+												<!-- Leave Info -->
+												
+												<!-- edit & attachment -->
+												<div class="col-md-2 tab-col-3">
+													<span class="text-right mr-3"><img id="popover-textarea" src="svg/remark.svg"></span>
+													<span class="text-right mr-3"><img id="popover-textarea" src="svg/remark.svg"></span>
+
+													<div id="myForm" class="hide" style="display: none;">
+														<form action="/echo/html/" id="popForm" method="get">
+															<div>
+																<textarea rows="2" name="about" id="about" class="form-control input-md"></textarea>
+																<button type="button" class="btn btn-submit mt-1" data-loading-text="Sending info..">Save</button>
+															</div>
+														</form>
+													</div>
+													
+													
+													
+												</div>
+												<!-- edit & attachment -->
+											</div>
+											
+										</div>
+										
+										
+										<div class="card tab-card">
+											<div class="row card-list">
+												
+												<!-- CHECKBOX & ICON -->
+												<div class="col-md-3 tab-col-1">
+													<span class="checkbox">
+														<label>
+															<input type="checkbox" class="check">
+														</label>
+													</span>
+													<span class="cost-circle"><h4>$,1340</h4></span>
+												</div>
+												<!-- CHECKBOX & ICON -->
+												
+												<!-- Leave Info -->
+												<div class="col-md-7 tab-col-2">
+													<h4 class="subject-line">India Trip</h4>
+													<p class="name-line mb-1 mt-1">John Miachel - JM001</p>
+													<p class="user-info">IT001</p>
+												</div>
+												<!-- Leave Info -->
+												
+												<!-- edit & attachment -->
+												<div class="col-md-2 tab-col-3">
+													<span class="text-right mr-3"><img id="popover-textarea" src="svg/remark.svg"></span>
+													<span class="text-right mr-3"><img id="popover-textarea" src="svg/remark.svg"></span>
+
+												</div>
+												<!-- edit & attachment -->
+											</div>
+											
+										</div>
+										
+										<div class="card tab-card">
+											<div class="row card-list">
+												
+												<!-- CHECKBOX & ICON -->
+												<div class="col-md-3 tab-col-1">
+													<span class="checkbox">
+														<label>
+															<input type="checkbox" class="check">
+														</label>
+													</span>
+													<span class="cost-circle"><h4>$,1340</h4></span>
+												</div>
+												<!-- CHECKBOX & ICON -->
+												
+												<!-- Leave Info -->
+												<div class="col-md-7 tab-col-2">
+													<h4 class="subject-line">India Trip</h4>
+													<p class="name-line mb-1 mt-1">John Miachel - JM001</p>
+													<p class="user-info">IT001</p>
+												</div>
+												<!-- Leave Info -->
+												
+												<!-- edit & attachment -->
+												<div class="col-md-2 tab-col-3">
+													<span class="text-right mr-3"><img id="popover-textarea" src="svg/remark.svg"></span>
+													<span class="text-right mr-3"><img id="popover-textarea" src="svg/remark.svg"></span>
+
+												</div>
+												<!-- edit & attachment -->
+											</div>
+											
+										</div>
+										
+										<div class="card tab-card">
+											<div class="row card-list">
+												
+												<!-- CHECKBOX & ICON -->
+												<div class="col-md-3 tab-col-1">
+													<span class="checkbox">
+														<label>
+															<input type="checkbox" class="check">
+														</label>
+													</span>
+													<span class="cost-circle"><h4>$,1340</h4></span>
+												</div>
+												<!-- CHECKBOX & ICON -->
+												
+												<!-- Leave Info -->
+												<div class="col-md-7 tab-col-2">
+													<h4 class="subject-line">India Trip</h4>
+													<p class="name-line mb-1 mt-1">John Miachel - JM001</p>
+													<p class="user-info">IT001</p>
+												</div>
+												<!-- Leave Info -->
+												
+												<!-- edit & attachment -->
+												<div class="col-md-2 tab-col-3">
+													<span class="text-right mr-3"><img id="popover-textarea" src="svg/remark.svg"></span>
+													<span class="text-right mr-3"><img id="popover-textarea" src="svg/remark.svg"></span>
+
+												</div>
+												<!-- edit & attachment -->
+											</div>
+											
+										</div>
+										<!-- CARD TABS -->
+										
+										
+										
+									</div>
+								</div>
+								
+								
+							</main>
+							
+							
+							<div class="d-xl-block col-md-auto col-xl-auto p-0 right-sidebar-fixed">
+								<div class="tab-button-list">
+									
+									<a class="dashboard-btn active"> <p> Leave <img src="svg/leave-dark.svg"></p> 
+									</a>
+									
+									<a class="dashboard-btn dashboard"> <p>Dashboard <img src="svg/dashboard-white.svg"></p> 
+									</a>
+									
+									<a class="dashboard-btn profile"> <p>Profile <img src="svg/profile.svg"></p> 
+									</a>
+									
+									<a class="dashboard-btn expense"> <p>Expense <img src="svg/expense.svg"></p> 
+									</a>
+									
+									<a class="dashboard-btn ta"> <p>T&A <img src="svg/ta.svg"></p> 
+									</a>
+									
+									<a class="dashboard-btn overtime"> <p>Overtime <img src="svg/overtime.svg"></p> 
+									</a>
+									
+									<a class="dashboard-btn payslip"> <p>Payslip <img src="svg/file (7).svg"></p> 
+									</a>
+									
+								</div>
+								
+								
+								
+							</div>
+							
+							
+							
+						</div>
+					</div>
+					
+					<!--*********************************Section 1*********************************-->
+					
+					<footer class="footer fixed-bottom-footer">
+						<div class="container">
+							<p class="footer-text m-0">Copyright ©2020 Corazon 2.0.0 | Powered by <span><a href="#">OSHRS</a></span></p>
+						</div>
+					</footer>
+					
+					
+					
+					<!-- Modal for Change password -->
+					<div class="modal animate modal-custom-style" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h6 class="modal-title" id="exampleModalLabel">Change Password</h6>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true"><i class="fa fa-times-circle"></i></span>
+									</button>
+								</div>
+								<div class="modal-body p-lg">
+									<div class="row">
+										<div class="col-md-12 custom-input-fields">
+											
+											<label>Current Password</label>
+											<div class="form-group pass_show"> 
+												<input type="password" value="raj123!@#" class="form-control" placeholder="Current Password"> 
+											</div> 
+											<label>New Password</label>
+											<div class="form-group pass_show"> 
+												<input type="password" value="ajith123!@#" class="form-control" placeholder="New Password"> 
+											</div> 
+											<label>Confirm Password</label>
+											<div class="form-group pass_show"> 
+												<input type="password" value="ajith123!@#" class="form-control" placeholder="Confirm Password"> 
+											</div> 
+											
+										</div>  
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary custom-btn-modal">Change Password</button>
+									<button type="button" class="btn btn-secondary custom-btn-modal secondary" data-dismiss="modal">Cancel</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Modal for Change password -->
+					
+					<!-- ************************************************************************************************ -->
+					
+					<!-- Modal for Edit profile Pic -->
+					<div class="modal fade animate modal-custom-style" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h6 class="modal-title" id="exampleModalLabel">Change Profile Picture</h6>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true"><i class="fa fa-times-circle"></i></span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<div class="avatar-upload">
+										<div class="avatar-edit">
+											<input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+											<label for="imageUpload"></label>
+										</div>
+										<div class="avatar-preview">
+											<div id="imagePreview" style="background-image: url(http://i.pravatar.cc/500?img=7);">
+											</div>
+										</div>
+										<h6 class="text-center mt-2 mb-0">Ajith</h6>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary custom-btn-modal" style="min-width: 100px;">Save</button>
+									<button type="button" class="btn btn-secondary custom-btn-modal secondary" data-dismiss="modal">Cancel</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Modal for Edit profile Pic -->
+					
+					<!-- SCRIPT -->
+					<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+					<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+					<!-- SCRIPT -->
+					
+					
+					<!-- MODAL ANIMATION SCRIPT -->
+					<script>
+						$(function(){
+							$('[role=dialog]')
+							.on('show.bs.modal', function(e) {
+								$(this)
+								.find('[role=document]')
+								.removeClass()
+								.addClass('modal-dialog ' + $(e.relatedTarget).data('ui-class'))
+							})
+						})
+					</script>
+					<!-- MODAL ANIMATION SCRIPT -->
+					
+					<!-- view more function -->
+					<script>
+						$('.expand-button').on('click', function(){
+							$('.special-text').toggleClass('-expanded');
+							
+							if ($('.special-text').hasClass('-expanded')) {
+								$('.expand-button').html('<i class="fa fa-angle-double-up" aria-hidden="true"></i>');
+							} else {
+								$('.expand-button').html('<i class="fa fa-angle-double-down" aria-hidden="true"></i>');
+							}
+						});
+					</script>
+					<!-- view more function -->
+					
+					<!-- Forgot password hide/show -->
+					<script>
+						$(document).ready(function(){
+							$('.pass_show').append('<span class="ptxt"><i class="fa fa-eye-slash"></i></span>');  
+						});
+						
+						
+						$(document).on('click','.pass_show .ptxt', function(){ 
+							
+							$(this).text($(this).text() == "Show" ? "Hide" : "Show");
+							
+							$(this).prev().attr('type', function(index, attr){return attr == 'password' ? 'text' : 'password'; }); 
+							
+						});  
+					</script>
+					<!-- Forgot password hide/show -->
+					
+					
+					<script>
+						$("#checkAll").click(function () {
+							$(".check").prop('checked', $(this).prop('checked'));
+						});
+						
+					</script>
+					
+					<script>
+						$(function () {
+							$('[data-toggle="popover"]').popover()
+						})
+					</script>
+					
+					<script>
+						$(function(){
+							$('#popover-textarea').popover({
+								
+								placement: 'bottom',
+								title: 'Textarea',
+								html:true,
+								content:  $('#myForm').html()
+							}).on('click', function(){
+								
+								$('.btn-submit').click(function(){
+									$('#result').after("form submitted by " + $('#email').val())
+									$.post('/echo/html/',  {
+										
+										
+										
+									}, function(r){
+										$('#pops').popover('hide')
+										$('#result').html('resonse from server could be here' )
+									})
+								})
+							})
+						})
+						
+					</script>
+					
+				</body>
+				</html>

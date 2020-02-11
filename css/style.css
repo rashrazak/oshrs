@@ -360,6 +360,7 @@ text-align: center;
     order: 1;
     position: relative;
     margin: 20px 0 20px 0;
+    padding-bottom: 100px;
 }
 
 .bd-content .bd-title
@@ -476,6 +477,11 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.20);
 .left-sidebar-fixed.ta
 {
 background: #EABD4E;
+}
+
+.left-sidebar-fixed.expense
+{
+background: #7677F7;
 }
 
 .left-sidebar-fixed.leave
@@ -613,6 +619,7 @@ box-shadow: 0px 0px 14px 3px rgba(0,0,0,0.25);
 font-size: 18px;
 font-weight: 700;
 color: #2C2C2C;
+padding-top: 25px;
 }
 
 .leave-info
@@ -760,6 +767,7 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.39);
 
 .icon-oval p {
   font-size: 16px;
+  padding-top: 10px;
 }
 
 .oval-big
@@ -797,8 +805,21 @@ a.animated-button.thar-four {
 	color: #0670B4;
 	cursor: pointer;
 	/* display: block; */
-	position: relative;
-	border: 1px solid #0670B4;
+  position: relative;
+	/* border: 1px solid #0670B4; */
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  line-height: 1.8;
+  width: 170px;
+  font-size: 16px;
+  border-radius: 0;
+}
+a.animated-button.thar-four.activeBtn {
+	color: #fff;
+	cursor: pointer;
+  /* display: block; */
+  background-color:#0670B4;
+  position: relative;
+	/* border: 1px solid #0670B4; */
   transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
   line-height: 1.8;
   width: 170px;
