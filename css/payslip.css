@@ -96,3 +96,21 @@
     height: 31px;
     border-radius: 0;
 }
+.table-payslip > thead > tr > th{
+    color: #565656;
+    font-size: 14px;
+    font-weight: normal;
+    background-color: #F1F3F9;
+}
+.table-payslip > tbody > tr > td{
+    color: #6D6D6D;
+    font-size: 14px;
+    font-weight: normal;
+    border-top: 0;
+}
+.table-payslip tbody tr:nth-of-type(odd){
+    background-color: #FFF;
+}
+.table-payslip tbody tr:nth-of-type(even){
+    background-color: #F7FAFC;
+}

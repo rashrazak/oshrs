@@ -221,10 +221,10 @@
                         </div>
 
                         <div class="">
-                            <table class="table">
+                            <table class="table table-payslip table-striped">
                                 <thead>
                                     <tr>
-                                        <th><input type="checkbox" class="check"> Select All</th>
+                                        <th><input type="checkbox" class="check" id="checkAll">  Select All</th>
                                         <th>Year</th>
                                         <th>Month</th>
                                         <th>View</th>
@@ -245,6 +245,22 @@
                                         </td>
                                         <td>2019</td>
                                         <td>December</td>
+                                        <td><button class="btn btn-view"></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" class="check">
+                                        </td>
+                                        <td>2019</td>
+                                        <td>November</td>
+                                        <td><button class="btn btn-view"></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" class="check">
+                                        </td>
+                                        <td>2019</td>
+                                        <td>October</td>
                                         <td><button class="btn btn-view"></button></td>
                                     </tr>
                                 </tbody>
@@ -495,6 +511,13 @@ crossorigin="anonymous"></script>
             // minDate: minDateToday
         });
     });
+</script>
+
+<script>
+    $("#checkAll").click(function () {
+        $(".check").prop('checked', $(this).prop('checked'));
+    });
+    
 </script>
 
 
