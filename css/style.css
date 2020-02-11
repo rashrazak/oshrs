@@ -474,6 +474,10 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.20);
 #fileElem {
   display: none;
 }
+.left-sidebar-fixed.payslip
+{
+background: #92BDE9;
+}
 .left-sidebar-fixed.ta
 {
 background: #EABD4E;

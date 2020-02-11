@@ -119,8 +119,8 @@
             <!-- left-side-menu -->
             <div class="col-12 col-md-auto col-xl-auto p-0 bd-sidebar left-sidebar-fixed ta">
                 <div class="vertical-block-top">
-                    <ul>
-                        <li><img src="svg/leave-sidenav.svg"></li>
+                    <ul style="text-align: center;">
+                        <i class="icon-tna"></i>
                     </ul>
                 </div>
                 <div class="vertical-block">
@@ -190,19 +190,15 @@
                             <!-- ta type -->
                             <div class="container container-ta">
                                 <div class="row form-type">
-                                    <div class="col-md-3">
+                                    <div class="col-md-5">
                                         <div class="form-group ta-form-clock">
                                             <label for="exampleFormControlSelect1">Clock In</label>
                                             <input type="time" class="form-control form-clock" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group ta-form-clock">
                                             <label for="exampleFormControlSelect1">Clock out</label>
                                             <input type="time" class="form-control form-clock" id="">
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-5">
                                         <div class="form-group ta-form-clock">
                                             <label for="exampleFormControlSelect1">Remarks</label>
                                             <input type="text" class="form-control form-remarks" id="inputPassword">
@@ -265,7 +261,7 @@
                 
                 <!-- leave status today -->
                 <div class="row">
-                    <div class="col-lg-9 mx-auto text-center leave-status">
+                    <div class="col-lg-12 mx-auto text-center leave-status">
                         <h4>My T&A Status as of <span>Today</span></h4>
                         <div class="row status-icon-tna">
                             <div class="">
@@ -287,7 +283,7 @@
                             <div class="">
                                 <i class="icon-approval-panel"></i>
                                 <p></p>
-                                <a href="javascript:void(0);" class="btn btn-sm animated-button thar-four">Approval Panel</a>
+                                <a href="/t&a_approver.html" class="btn btn-sm animated-button thar-four">Approval Panel</a>
                             </div>
                             <div class="">
                                 <i class="icon-tna-history"></i>
@@ -698,6 +694,7 @@ crossorigin="anonymous"></script>
             useCurrent: false,
             // minDate: minDateToday
         });
+    });
 </script>
 
 

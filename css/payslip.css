@@ -1,0 +1,89 @@
+.ps-special-text{
+    margin-top: 200px;
+}
+.ps-special-text > h2{
+    font-size: 28px;
+    font-weight: bold;
+    margin: 26px 0 80px 0;
+}
+.container-efilling{
+    background-color: #F5F5F5;
+    box-shadow: rgba(0,0,0,0.14);
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+.container-efilling > a{
+    font-size: 24px;
+    color: #2577AC;
+}
+.row-tab-function{
+    /* position: absolute;
+    width: 100%;
+    top: 250px; */
+}
+.payslip-summary-section{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.payslip-summary-section > div{
+    width: 100%;
+}
+.payslip-summary-section > div > p{
+    font-size: 16px;
+    font-weight: normal;
+    color: #2C2C2C;
+}
+.select-month-section > p{
+    display: inline-block;
+}
+.select-month-section > .form-control-select{
+    display: inline-block;
+    width: 40%;
+    border-radius: 0;
+}
+.select-month-section > div{
+    padding: 30px;
+}
+.select-month-section > div > p{
+    font-size: 16px;
+    font-weight: normal;
+    color: #2C2C2C;
+    margin-bottom: 0;
+}
+.select-month-section > div > h2{
+    font-size: 48px;
+    font-weight: bold;
+    color: #0670B4;
+}
+.gross-salary > p, .sales > p, .income-taxes > p{
+    color: #2C2C2C;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+}
+.gross-salary > h4{
+    color: #0670B4;
+    font-size: 36px;
+    font-weight: 600;
+}
+.sales > h4{
+    color: #32B6A6;
+    font-size: 36px;
+    font-weight: 600;
+}
+.income-taxes > h4{
+    color: #E8AA35;
+    font-size: 36px;
+    font-weight: 600;
+}
+.table-salary-breakdown > tbody > tr > td{
+    background-color: #FFF;
+    padding: 10px 20px;
+}

@@ -52,8 +52,8 @@
 }
 .icon-payslip:before {
   content: "\e905";
-  color: #F57171;
   font-size: 4em;
+  color: #FFF;
 }
 .icon-setting:before {
   content: "\e906";
@@ -93,7 +93,7 @@
 }
 .icon-tna:before {
   content: "\e90f";
-  color: #6e6e6e;
+  color: #FFF;
 }
 .icon-approval:before {
   content: "\e910";
