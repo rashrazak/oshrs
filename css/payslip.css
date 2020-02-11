@@ -87,3 +87,12 @@
     background-color: #FFF;
     padding: 10px 20px;
 }
+.btn-view{
+    background-image: url(../img/payslip/download-btn.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #2577AC;
+    width: 31px;
+    height: 31px;
+    border-radius: 0;
+}
