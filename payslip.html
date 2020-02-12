@@ -199,7 +199,6 @@
                                 </div>
                             </div>
                             <!-- Hidden Content -->
-                            
                         </div>
                     </div>
                     <button class="expand-button">
@@ -218,7 +217,58 @@
                     <div class="container container-table-payslip">
                         <div class="select-range-container">
                             <p>Select Range</p>
-
+                            <input type="text" class="form-control form-date">
+                            <small>to</small>
+                            <input type="text" class="form-control form-date">
+                        </div>
+                        <div class="">
+                            <table class="table table-payslip table-striped">
+                                <thead>
+                                    <tr>
+                                        <th><input type="checkbox" class="check" id="checkAll">  Select All</th>
+                                        <th>Year</th>
+                                        <th>Month</th>
+                                        <th>View</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" class="check">
+                                        </td>
+                                        <td>2020</td>
+                                        <td>January</td>
+                                        <td><button class="btn btn-view"></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" class="check">
+                                        </td>
+                                        <td>2019</td>
+                                        <td>December</td>
+                                        <td><button class="btn btn-view"></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" class="check">
+                                        </td>
+                                        <td>2019</td>
+                                        <td>November</td>
+                                        <td><button class="btn btn-view"></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" class="check">
+                                        </td>
+                                        <td>2019</td>
+                                        <td>October</td>
+                                        <td><button class="btn btn-view"></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="btn-download-section">
+                            <button type="button" class="btn btn-download btnDownload" disabled>Download</button>
                         </div>
                     </div>
                 </div>
@@ -408,7 +458,7 @@ crossorigin="anonymous"></script>
 </script>
 <!-- Forgot password hide/show -->
 
-<script>
+<!-- <script>
     if (/Mobi/.test(navigator.userAgent)) {
         // if mobile device, use native pickers
         $(".date input").attr("type", "date");
@@ -433,7 +483,7 @@ crossorigin="anonymous"></script>
             }
         });
     }
-</script>
+</script> -->
 
 <!-- TALBE HIDE / SHOW -->
 <script>
@@ -457,7 +507,7 @@ crossorigin="anonymous"></script>
 </script>
 
 <!-- CALENDAR VIEW -->
-<script>
+<!-- <script>
     $(document.body).on('click', '.openCalendar', function (){  
         $('#viewCalendar').datetimepicker({
             format: 'L',
@@ -465,8 +515,25 @@ crossorigin="anonymous"></script>
             // minDate: minDateToday
         });
     });
+</script> -->
+
+<script>
+    $("#checkAll").click(function () {
+        $(".check").prop('checked', $(this).prop('checked'));
+    });
 </script>
 
+<script>
+    $(function() {
+        $('.check').click(function() {
+            if ($('.check').is(':checked')) {
+                $('.btnDownload').removeAttr('disabled');
+            } else {
+                $('.btnDownload').attr('disabled', 'disabled');
+            }
+        });
+    });
+</script>
 
 </body>
 
