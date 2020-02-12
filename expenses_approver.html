@@ -182,7 +182,7 @@
 										
 										
 										<!-- CARD TABS -->
-										<div class="card tab-card select">
+										<div class="card tab-card">
 											<div class="row card-list">
 												
 												<!-- CHECKBOX & ICON -->
@@ -497,7 +497,6 @@
 						
 						
 						$(document).on('click','.pass_show .ptxt', function(){ 
-							
 							$(this).text($(this).text() == "Show" ? "Hide" : "Show");
 							
 							$(this).prev().attr('type', function(index, attr){return attr == 'password' ? 'text' : 'password'; }); 
@@ -509,8 +508,12 @@
 					
 					<script>
 						$("#checkAll").click(function () {
-							$(".check").prop('checked', $(this).prop('checked'));
+							$(".check").prop('checked', $(this).prop('checked')).parents('.card.tab-card').toggleClass('select');
 						});
+
+						$('.check').click(function(){
+							$(this).parents('.card.tab-card').toggleClass('select');
+						})
 						
 					</script>
 					
