@@ -296,4 +296,5 @@ tbody{
 
 .table td, .table th{
     border-top: none;
+    padding-bottom:10px;
 }
